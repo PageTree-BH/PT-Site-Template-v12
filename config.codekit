@@ -2,303 +2,6 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "19127",
 "files": {
-	"\/_deploy\/assets\/img\/barrels-lg.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 529886,
-		"inputAbbreviatedPath": "\/_deploy\/assets\/img\/barrels-lg.jpg",
-		"outputAbbreviatedPath": "\/_deploy\/assets\/img\/barrels-lg.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_deploy\/assets\/img\/barrels-md.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 320845,
-		"inputAbbreviatedPath": "\/_deploy\/assets\/img\/barrels-md.jpg",
-		"outputAbbreviatedPath": "\/_deploy\/assets\/img\/barrels-md.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_deploy\/assets\/img\/barrels-sm.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 131747,
-		"inputAbbreviatedPath": "\/_deploy\/assets\/img\/barrels-sm.jpg",
-		"outputAbbreviatedPath": "\/_deploy\/assets\/img\/barrels-sm.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_deploy\/assets\/img\/bg-suds-lg.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 463280,
-		"inputAbbreviatedPath": "\/_deploy\/assets\/img\/bg-suds-lg.png",
-		"outputAbbreviatedPath": "\/_deploy\/assets\/img\/bg-suds-lg.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_deploy\/assets\/img\/bg-suds-md.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 201542,
-		"inputAbbreviatedPath": "\/_deploy\/assets\/img\/bg-suds-md.png",
-		"outputAbbreviatedPath": "\/_deploy\/assets\/img\/bg-suds-md.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_deploy\/assets\/img\/brands\/1.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 17818,
-		"inputAbbreviatedPath": "\/_deploy\/assets\/img\/brands\/1.png",
-		"outputAbbreviatedPath": "\/_deploy\/assets\/img\/brands\/1.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_deploy\/assets\/img\/brands\/2.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 19333,
-		"inputAbbreviatedPath": "\/_deploy\/assets\/img\/brands\/2.png",
-		"outputAbbreviatedPath": "\/_deploy\/assets\/img\/brands\/2.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_deploy\/assets\/img\/brands\/3.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 17185,
-		"inputAbbreviatedPath": "\/_deploy\/assets\/img\/brands\/3.png",
-		"outputAbbreviatedPath": "\/_deploy\/assets\/img\/brands\/3.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_deploy\/assets\/img\/brands\/4.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 6898,
-		"inputAbbreviatedPath": "\/_deploy\/assets\/img\/brands\/4.png",
-		"outputAbbreviatedPath": "\/_deploy\/assets\/img\/brands\/4.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_deploy\/assets\/img\/brands\/5.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 31119,
-		"inputAbbreviatedPath": "\/_deploy\/assets\/img\/brands\/5.png",
-		"outputAbbreviatedPath": "\/_deploy\/assets\/img\/brands\/5.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_deploy\/assets\/img\/brands\/6.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 21708,
-		"inputAbbreviatedPath": "\/_deploy\/assets\/img\/brands\/6.png",
-		"outputAbbreviatedPath": "\/_deploy\/assets\/img\/brands\/6.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_deploy\/assets\/img\/brands\/7.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 9897,
-		"inputAbbreviatedPath": "\/_deploy\/assets\/img\/brands\/7.png",
-		"outputAbbreviatedPath": "\/_deploy\/assets\/img\/brands\/7.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_deploy\/assets\/img\/building-render-lg.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 191975,
-		"inputAbbreviatedPath": "\/_deploy\/assets\/img\/building-render-lg.jpg",
-		"outputAbbreviatedPath": "\/_deploy\/assets\/img\/building-render-lg.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_deploy\/assets\/img\/building-render-md.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 119213,
-		"inputAbbreviatedPath": "\/_deploy\/assets\/img\/building-render-md.jpg",
-		"outputAbbreviatedPath": "\/_deploy\/assets\/img\/building-render-md.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_deploy\/assets\/img\/building-render-sm.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 35109,
-		"inputAbbreviatedPath": "\/_deploy\/assets\/img\/building-render-sm.jpg",
-		"outputAbbreviatedPath": "\/_deploy\/assets\/img\/building-render-sm.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_deploy\/assets\/img\/header-bg-draft-lg.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 335240,
-		"inputAbbreviatedPath": "\/_deploy\/assets\/img\/header-bg-draft-lg.jpg",
-		"outputAbbreviatedPath": "\/_deploy\/assets\/img\/header-bg-draft-lg.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_deploy\/assets\/img\/header-bg-draft-md.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 180542,
-		"inputAbbreviatedPath": "\/_deploy\/assets\/img\/header-bg-draft-md.jpg",
-		"outputAbbreviatedPath": "\/_deploy\/assets\/img\/header-bg-draft-md.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_deploy\/assets\/img\/header-bg-draft-sm.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 63430,
-		"inputAbbreviatedPath": "\/_deploy\/assets\/img\/header-bg-draft-sm.jpg",
-		"outputAbbreviatedPath": "\/_deploy\/assets\/img\/header-bg-draft-sm.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_deploy\/assets\/img\/knoxville-lg.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 495223,
-		"inputAbbreviatedPath": "\/_deploy\/assets\/img\/knoxville-lg.jpg",
-		"outputAbbreviatedPath": "\/_deploy\/assets\/img\/knoxville-lg.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_deploy\/assets\/img\/knoxville-md.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 298398,
-		"inputAbbreviatedPath": "\/_deploy\/assets\/img\/knoxville-md.jpg",
-		"outputAbbreviatedPath": "\/_deploy\/assets\/img\/knoxville-md.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_deploy\/assets\/img\/knoxville-sm.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 70386,
-		"inputAbbreviatedPath": "\/_deploy\/assets\/img\/knoxville-sm.jpg",
-		"outputAbbreviatedPath": "\/_deploy\/assets\/img\/knoxville-sm.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_deploy\/assets\/img\/logo-bci-black.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 14977,
-		"inputAbbreviatedPath": "\/_deploy\/assets\/img\/logo-bci-black.png",
-		"outputAbbreviatedPath": "\/_deploy\/assets\/img\/logo-bci-black.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_deploy\/assets\/img\/logo-bci-white.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 8505,
-		"inputAbbreviatedPath": "\/_deploy\/assets\/img\/logo-bci-white.png",
-		"outputAbbreviatedPath": "\/_deploy\/assets\/img\/logo-bci-white.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_deploy\/assets\/img\/state-tn-counties.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 69846,
-		"inputAbbreviatedPath": "\/_deploy\/assets\/img\/state-tn-counties.png",
-		"outputAbbreviatedPath": "\/_deploy\/assets\/img\/state-tn-counties.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_deploy\/assets\/img\/truck-lg.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 482152,
-		"inputAbbreviatedPath": "\/_deploy\/assets\/img\/truck-lg.jpg",
-		"outputAbbreviatedPath": "\/_deploy\/assets\/img\/truck-lg.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_deploy\/assets\/img\/truck-md.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 197185,
-		"inputAbbreviatedPath": "\/_deploy\/assets\/img\/truck-md.jpg",
-		"outputAbbreviatedPath": "\/_deploy\/assets\/img\/truck-md.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_deploy\/assets\/img\/truck-sm.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 74618,
-		"inputAbbreviatedPath": "\/_deploy\/assets\/img\/truck-sm.jpg",
-		"outputAbbreviatedPath": "\/_deploy\/assets\/img\/truck-sm.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/_deploy\/assets\/js\/jquery.jpanelmenu.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -363,39 +66,6 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/_deploy\/assets\/pt-base-v9 copy.min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_deploy\/assets\/pt-base-v9 copy.min.js",
-		"outputAbbreviatedPath": "\/_deploy\/assets\/pt-base-v9 copy.min.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/_deploy\/assets\/pt-base-v9.min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_deploy\/assets\/pt-base-v9.min.js",
-		"outputAbbreviatedPath": "\/_deploy\/assets\/pt-base-v9.min.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/_deploy\/assets\/site-backup-v1.min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_deploy\/assets\/site-backup-v1.min.js",
-		"outputAbbreviatedPath": "\/_deploy\/assets\/site-backup-v1.min.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/_deploy\/assets\/SITE-VARS_CMS.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -425,40 +95,11 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/_deploy\/assets\/site.min[Conflict].js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_deploy\/assets\/site.min[Conflict].js",
-		"outputAbbreviatedPath": "\/_deploy\/assets\/site.min[Conflict].min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/_deploy\/assets\/site[Conflict].css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_deploy\/assets\/site[Conflict].css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/_deploy\/index.html": {
 		"fileType": 8192,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_deploy\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/_deploy\/index[Conflict].html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_deploy\/index[Conflict].html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -3763,17 +3404,6 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/pt\/pt-base-v9 copy.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/pt\/pt-base-v9 copy.js",
-		"outputAbbreviatedPath": "\/_deploy\/assets\/pt-base-v9 copy.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/sasskits\/_site-base.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -3842,7 +3472,7 @@
 		},
 	"\/sasskits\/Navigation-Sidr.kit": {
 		"fileType": 2048,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sasskits\/Navigation-Sidr.kit",
 		"outputAbbreviatedPath": "\/sasskits\/Navigation-Sidr.html",
@@ -4299,15 +3929,15 @@
 	"jadeAutoOutputPathStyle": 0,
 	"jadeCompileDebug": 1,
 	"jadeOutputStyle": 0,
-	"javascriptAutoOutputPathEnabled": 1,
+	"javascriptAutoOutputPathEnabled": 0,
 	"javascriptAutoOutputPathFilenamePattern": "*.min.js",
-	"javascriptAutoOutputPathRelativePath": "_deploy\/assets\/",
+	"javascriptAutoOutputPathRelativePath": "_deploy\/assets\/js",
 	"javascriptAutoOutputPathReplace1": "",
 	"javascriptAutoOutputPathReplace2": "",
 	"javascriptAutoOutputPathStyle": 1,
 	"javascriptCreateSourceMap": 1,
 	"javascriptOutputStyle": 1,
-	"javascriptSyntaxCheckerStyle": 1,
+	"javascriptSyntaxCheckerStyle": 0,
 	"jsCheckerReservedNamesString": "console, alert, global, global $, $, SITE:true, TimelineMax:true, TweenMax:true, TweenLite:true, SplitText:true, Linear:true, Elastic:true, Power1:true, Power2:true, Power3:true, Power4:true, Bounce:true, ScrollMagic:true, FastClick:true, enquire:true, Justice:true, ScrollMagic:true, Modernizr:true",
 	"jsHintFlags2": {
 		"asi": {

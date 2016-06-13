@@ -5,10 +5,16 @@
 
 
 
+@import "pt/_PT-MIXINS";
+
+
+
+
+
 
 $pt-color-primary	:	brown	; 
-$pt-color-secondary	:	salmon	; 
-$pt-color-highlight	: 	orangered 	; 
+$pt-color-secondary	:	lightblue	; 
+$pt-color-highlight	: 	lime 	; 
 
 
 
@@ -20,45 +26,18 @@ $pt-color-black		: #000		;
 
 
 
-// $pt-sidr-background : $pt-color-primary;
 
 
 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
-
-
-
-@import "pt/_PT-MIXINS";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-    NAVIGATION - TOPBAR #pt-topbar:
- */
+/*     NAVIGATION - TOPBAR #pt-topbar:    Based on Topbar      */
  
 $quick-contact-height:3em;
 $quick-contact-bg: #e1e1e1;
 
-$nav-bgcolor: rgba(0,0,0,0.9);
-// $nav-bgcolor: rgba($pt-color-primary ,0.9);
+// $nav-bgcolor: rgba(0,0,0,0.9);
+$nav-bgcolor: rgba($pt-color-primary ,0.9);
 
 
 $nav-btn-highlight: $pt-color-highlight;
@@ -69,12 +48,69 @@ $sitenav-height: 80;
 
 
 
+
+
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+/*    SIDR.js   SIDE MENU    */
+
+// Colors
+$sidr-background: $pt-color-primary;
+$sidr-text-color: #fff;
+
+// Width
+$sidebar-width: 300px;
+$sidebar-width-neg: -$sidebar-width;
+
+$sidr-cover-color: rgba(0,0,0,0.8);
+
+$sidr-topbar-height: 70px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/* 
+    NAVIGATION - TOPBAR #pt-topbar:
+    Based on Topbar
+*/
+ 
+/* 
+$quick-contact-height:3em;
+$quick-contact-bg: #e1e1e1;
+
+$nav-bgcolor: rgba(0,0,0,0.9);
+// $nav-bgcolor: rgba($pt-color-primary ,0.9);
+
+
+$nav-btn-highlight: $pt-color-highlight;
+ 
+$sitenav-height: 80;
+ */
+
+
+
 #pt-topbar {
 
-    // background-color:$nav-bgcolor;
     background-color:transparent;
     background-color:rgba($nav-bgcolor, 0.2);
-
 
     &.bg-solid{
         background-color:$nav-bgcolor !important;
@@ -96,9 +132,8 @@ $sitenav-height: 80;
     &.nav-is-open{
         background-color:$nav-bgcolor;
     }
-
-
-    .pt-container{
+ 
+    // .pt-container{
         @include ptBreakpoint($sm){
             #navbar{
                 ul.nav{
@@ -111,8 +146,7 @@ $sitenav-height: 80;
                 }
             }
         }
-    }
-
+    // }
 
     .navbar-header {
 
@@ -128,7 +162,6 @@ $sitenav-height: 80;
             }
         }
     }
-
 
     #navbar{
 
@@ -150,8 +183,6 @@ $sitenav-height: 80;
             background-color:$nav-btn-highlight;
         }
     }
-
-
 
     .dropdown-menu{
         background-color: rgba($nav-bgcolor, 0.98);
@@ -184,13 +215,6 @@ $sitenav-height: 80;
     }
 }
 
-/* 
-
-
-
- */
-
-
 
 
 
@@ -215,35 +239,14 @@ $sitenav-height: 80;
 /* 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    SIDR.js   SIDE MENU 
 
 
  */
 
 
-
-
-
-
-
-
-
-
-
+/* 
 // Colors
-// $sidr-background: $bci-orange;
 $sidr-background: $pt-color-primary;
 $sidr-text-color: #fff;
 
@@ -252,12 +255,9 @@ $sidebar-width: 300px;
 $sidebar-width-neg: -$sidebar-width;
 
 $sidr-cover-color: rgba(0,0,0,0.8);
-// $sidr-cover-color: red;
-
-
 
 $sidr-topbar-height: 70px;
-
+ */
 
 
  
@@ -265,9 +265,8 @@ $sidr-topbar-height: 70px;
 
 
 
-// .js{
-
     .sidr{
+
         background-color:$sidr-background;
 
         ul {
@@ -283,16 +282,12 @@ $sidr-topbar-height: 70px;
             }
         }
 
-
-
-
         a { 
             color: $pt-color-white;
             &:hover,&:focus {
                 // color: lighten($pt-color-highlight, 10%);
             }
         }
-
 
     }
 
@@ -365,8 +360,11 @@ $sidr-topbar-height: 70px;
         background-color:$sidr-cover-color;
     }
 
- 
-// }
+
+
+
+
+
 
 
 
@@ -374,24 +372,10 @@ $sidr-topbar-height: 70px;
 /* 
 
 
-
-
-
-
-
-
+    BOOTSTRAP BUTTON / LINK / NAV STYLES
 
 
  */
-
-
-
-
-
-
-
-
-
 
 
 

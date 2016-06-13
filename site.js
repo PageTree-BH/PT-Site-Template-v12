@@ -47,7 +47,7 @@ var SITE = {
 
         // PT.monitorFPS();
         
-        PT.addRandomClass('.homeplate', ['bg-r1', 'bg-r2', 'bg-r3']);
+        // PT.addRandomClass('.homeplate', ['bg-r1', 'bg-r2', 'bg-r3']);
 
     }
 
@@ -64,8 +64,8 @@ var SITE = {
  
 
 
+ 
 
 
 
-
-
+ 
