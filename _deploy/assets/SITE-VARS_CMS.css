@@ -40,9 +40,9 @@ $sitenav-height: 80;
  */
 #pt-topbar {
   background-color: transparent;
-  background-color: rgba(0, 0, 255, 0.2); }
+  background-color: rgba(165, 42, 42, 0.2); }
   #pt-topbar.bg-solid {
-    background-color: rgba(0, 0, 255, 0.9) !important; }
+    background-color: rgba(165, 42, 42, 0.9) !important; }
   #pt-topbar.is-fixed-top {
     position: fixed;
     top: 0; }
@@ -51,11 +51,11 @@ $sitenav-height: 80;
   .has-quick-contact #pt-topbar.is-fixed-top {
     top: 3em; }
   #pt-topbar.nav-is-open {
-    background-color: rgba(0, 0, 255, 0.9); }
+    background-color: rgba(165, 42, 42, 0.9); }
   @media screen and (min-width: 768px) {
     #pt-topbar #navbar ul.nav > li a {
-      height: 80;
-      line-height: 64; } }
+      height: 80px;
+      line-height: 64px; } }
   #pt-topbar .navbar-header .navbar-toggle {
     color: white;
     background-color: lime; }
@@ -73,7 +73,7 @@ $sitenav-height: 80;
   #pt-topbar #navbar li.active a {
     background-color: lime; }
   #pt-topbar .dropdown-menu {
-    background-color: rgba(0, 0, 255, 0.98); }
+    background-color: rgba(165, 42, 42, 0.98); }
 
 .pt-quick-contact {
   height: 3em;
@@ -82,7 +82,7 @@ $sitenav-height: 80;
     color: #fdf6ee; }
   .pt-quick-contact .social-media-icons li a {
     color: white;
-    background-color: blue; }
+    background-color: brown; }
     .pt-quick-contact .social-media-icons li a:hover, .pt-quick-contact .social-media-icons li a:focus {
       color: white;
       background-color: lime; }
@@ -108,41 +108,41 @@ $sidr-cover-color: rgba(0,0,0,0.8);
 $sidr-topbar-height: 70px;
  */
 .sidr {
-  background-color: blue; }
+  background-color: brown; }
   .sidr ul {
-    border-top: 1px solid #0000cc;
-    border-bottom: 1px solid #3333ff; }
+    border-top: 1px solid #7c2020;
+    border-bottom: 1px solid #cc3636; }
     .sidr ul li {
-      border-top: 1px solid #3333ff;
-      border-bottom: 1px solid #0000cc; }
+      border-top: 1px solid #cc3636;
+      border-bottom: 1px solid #7c2020; }
       .sidr ul li:hover {
-        background-color: #0000cc; }
+        background-color: #7c2020; }
   .sidr a {
     color: #fff; }
 
 #sidr-topbar {
-  background-color: blue; }
+  background-color: brown; }
   .js #sidr-topbar {
     height: 70px; }
 
 #sidr-menu-btn {
-  background-color: #0000cc;
+  background-color: #7c2020;
   width: 70px;
   height: 70px; }
   #sidr-menu-btn:hover, #sidr-menu-btn:focus {
     text-decoration: none;
-    background-color: #000066; }
+    background-color: #2b0b0b; }
 
 #sidr-close-btn {
   right: 300px;
   height: 70px;
   width: 70px;
-  background-color: #0000cc; }
+  background-color: #7c2020; }
   #sidr-close-btn:hover, #sidr-close-btn:focus {
-    background-color: #000066; }
+    background-color: #2b0b0b; }
 
 #pt-sidr {
-  background-color: blue; }
+  background-color: brown; }
   #pt-sidr a {
     color: white; }
     #pt-sidr a:hover, #pt-sidr a:focus {
@@ -150,7 +150,7 @@ $sidr-topbar-height: 70px;
   #pt-sidr .contact-links {
     min-height: 70px; }
     #pt-sidr .contact-links a:hover, #pt-sidr .contact-links a:focus {
-      background-color: #0000cc; }
+      background-color: #7c2020; }
   #pt-sidr .caret {
     border-top-color: #fff; }
 
@@ -165,35 +165,35 @@ $sidr-topbar-height: 70px;
 
  */
 a {
-  color: blue; }
+  color: brown; }
   a:hover, a:focus {
-    color: #3333ff; }
+    color: #cc3636; }
 
 .btn-primary {
   color: #fff;
-  background-color: blue; }
+  background-color: brown; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
-    color: blue;
+    color: brown;
     background-color: white;
-    border-color: blue; }
+    border-color: brown; }
 
 .nav-pills > li > a {
-  border: 1px solid blue; }
+  border: 1px solid brown; }
 
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: #fff;
-  background-color: blue; }
+  background-color: brown; }
 
 ul.nav li.active a {
   color: white;
-  background-color: blue; }
+  background-color: brown; }
   ul.nav li.active a:hover, ul.nav li.active a:focus, ul.nav li.active a:active, ul.nav li.active a:focus {
     color: white;
     background-color: lime; }
 ul.nav li a {
-  color: blue; }
+  color: brown; }
   ul.nav li a:hover, ul.nav li a:focus, ul.nav li a:active, ul.nav li a:focus {
     color: white;
-    background-color: blue; }
+    background-color: brown; }
