@@ -1,0 +1,213 @@
+
+
+
+
+
+
+
+
+
+
+
+@mixin abSection(){
+
+    position:relative;
+    
+    display:flex;
+    flex-direction:column;
+    justify-content:stretch;
+    align-content:stretch;
+    align-items:stretch;
+
+    width:100%;
+    max-width:500px;
+    
+    margin:0.5em auto;
+    
+    @include ptBreakpoint($sm){
+
+        flex-direction:row;
+        flex-wrap:wrap;
+        width:100%;
+        max-width:100%;
+        margin:0;
+
+        &.ab-flipped{
+            flex-direction:row-reverse;
+        }
+
+        .ab-flipflop & {
+            &:nth-child(2n){
+                flex-direction:row-reverse;
+            }
+        }
+    }
+}
+
+
+
+
+
+.ab-5050, 
+.ab-4060, 
+.ab-6040, 
+.ab-3070, 
+.ab-7030 {
+    @include abSection();
+}
+
+.ab-section{
+    @include abSection();
+}
+
+
+
+
+
+@include ptBreakpoint($sm){
+
+  .ab-5050 {
+    .ab-a{  width:50%;  }
+    .ab-b{  width:50%;  }
+  }
+
+  .ab-4060 {
+    .ab-a{  width:40%;  }
+    .ab-b{  width:60%;  }
+  }
+ 
+  .ab-6040 {
+    .ab-a{  width:60%;  }
+    .ab-b{  width:40%;  }
+  }
+
+  .ab-3070 {
+    .ab-a{  width:30%;  }
+    .ab-b{  width:70%;  }
+  }
+
+  .ab-7030 {
+    .ab-a{  width:70%;  }
+    .ab-b{  width:30%;  }
+  }
+
+}
+
+
+
+
+
+
+.ab-header{
+  display:block;
+  width:100%;
+  flex:1 1 100%;
+  text-align:center;
+}
+
+.ab-a{
+  position: relative;
+  width:100%;
+  min-height:15em;
+}
+
+.ab-b{
+  position: relative;
+  width:100%;
+  min-height:15em;
+}
+
+
+.ab-txt{
+    padding:1em;
+
+    @include ptBreakpoint($sm){
+        padding:2em;
+    }
+
+    @include ptBreakpoint($md){
+        padding:5em;
+    }
+
+    p{
+        text-align:left;
+        max-width:60em;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    h2{
+
+    }
+
+}
+
+
+.ab-img{
+    overflow:hidden;
+
+    img{
+        position:relative;
+        display:block;    
+        margin:auto;
+        width:100%;
+        max-width:100%;
+        height:auto;
+    }
+
+    @include ptBreakpoint($sm){
+
+        img{
+            position:absolute;
+            top:50%;
+            transform:translateY(-50%);
+        }
+    }
+}
+
+
+
+
+.ab-inner{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// $columns: 4;
+
+// @for $i from 1 through $columns {
+//   .cols-#{$i} {
+//     width: ((100 / $columns) * $i) * 1%;
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

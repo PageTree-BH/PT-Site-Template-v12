@@ -1,0 +1,515 @@
+
+
+
+
+
+
+ 
+
+
+
+/* 
+    <div class="pt-quick-contact">
+
+        <ul class="social-media-icons">
+            <li><a href="#" target="_blank"><i class="fa fa-account"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-login"></i></a></li>
+            <li><i class="">&nbsp;&nbsp;&nbsp;</i></li>
+            <li><a href="#" target="_blank"><i class="fa fa-phone"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-envelope"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-map-marker"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        </ul>
+
+    </div>
+
+    
+
+
+
+    <div id="pt-topbar" class="navbar navbar-default " >
+
+      <div class="pt-container">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="#"><img src="http://placehold.it/100x50/?text=LOGO" alt="logo"></a>
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+
+
+            <ul class="nav navbar-nav">
+
+                <li id="main_nav_item_0" class="main_nav_item "><a tabindex="-1" href="#">Home</a></li>
+                <li id="main_nav_item_1" class="main_nav_item "><a tabindex="-1" href="#">About</a></li>
+                <li id="main_nav_item_2" class="main_nav_item "><a tabindex="-1" href="#">Contact</a></li>
+                <li id="main_nav_item_4" class="main_nav_item dropdown"><a tabindex="-1" href="#" role="button" data-toggle="dropdown" class="dropdown-toggle">Sub Pages <b class="caret"></b></a>
+                    
+                    <ul role="menu" class="dropdown-menu multi-level" aria-labelledby="dropdownMenu">
+                        <li class=""><a tabindex="-1" href="#">One</a></li>
+                        <li class=""><a tabindex="-1" href="#">Two</a></li>
+                        <li class=""><a tabindex="-1" href="#">Three</a></li>
+                    </ul>
+
+                </li>
+                           
+                <li id="main_nav_item_5" class="main_nav_item "><a tabindex="-1" href="#">New Page</a></li>
+                 
+            </ul>
+
+        </div>
+
+      </div>
+    </div> 
+
+ */
+
+
+ 
+$quick-contact-height:2em;
+
+$quick-contact-bg: #e1e1e1;
+
+
+
+$nav-border-color: #78756e;
+
+$nav-bgcolor: rgba(0,0,0,0.9);
+$nav-bgcolor: rgba($pt-color-primary ,0.9);
+
+
+$nav-btn-highlight: $pt-color-primary;
+ 
+
+$sitenav-height: 80px;
+
+
+
+
+
+
+
+
+
+
+#pt-topbar {
+    // *{border:1px solid red;}
+
+    z-index:99;
+    margin:0;
+    padding:0;
+
+    // position:fixed;
+    // position:relative;
+
+    // border:1px solid red;
+
+
+    width:100%;
+    left:0; right:0; 
+
+
+    transition:0.2s;
+
+    border-radius:0;
+
+    border-color:transparent;
+
+    // background-color:$nav-bgcolor;
+    background-color:transparent;
+
+    background-color:rgba($nav-bgcolor, 0.2);
+
+
+    .js &{
+        // background-color:rgba(0,0,0,0);
+        // position:fixed;
+    }
+
+
+    &.bg-solid{
+        background-color:$nav-bgcolor !important;
+        div .navbar-brand{
+            opacity:1;
+        }
+    }
+    &.bg-none{
+        background-color:transparent;
+    }
+
+    &.is-fixed-top{
+        position:fixed;
+        top:0;
+    }
+
+    .has-quick-contact{
+        top:$quick-contact-height;
+    } 
+
+    .has-quick-contact &.is-fixed-top{
+        position:fixed;
+        top:$quick-contact-height;
+    } 
+
+    &.nav-is-open{
+        background-color:$nav-bgcolor;
+        .navbar-brand{
+            opacity:1 !important;
+        }
+    }
+
+
+
+
+    .pt-container{
+        // >*{border:1px solid red;}
+
+        display:flex;
+        flex-direction:column;
+
+        .navbar-header{
+            flex:1 1 40%;
+            order:1;
+        }
+
+        .social-media-icons{
+            flex:1 1 40%;
+            order:2;
+        }
+
+        #navbar{
+            flex:1 1 100%;
+            order:3;
+        }
+        
+        @include ptBreakpoint($sm){
+            flex-direction: row;
+            flex-wrap:wrap;
+
+            // height:$sitenav-height;
+
+            .navbar-header{
+                flex:0 0 200px;
+                order:1;
+            }
+
+            .social-media-icons{
+                position:absolute; top:0.5em; right:1em;
+            }
+
+            #navbar{
+                // float:right;
+
+                flex:1 1 50%;
+                // order:3;
+                // border:2px solid green;
+
+                // height: $sitenav-height;
+                // height: 100%;
+                // position: absolute;
+
+                // THERE IS THIS BOOTSTRAP CODE:
+                /* 
+                @media (min-width: 768px)
+                .navbar-collapse.collapse {
+                    display: block !important;
+                    visibility: visible !important;
+                    height: auto !important;
+                    padding-bottom: 0;
+                    overflow: visible !important;
+                }
+                */
+
+                display:flex !important;
+                flex-direction:column;
+                justify-content:center;
+                // align-items:stretch;
+                // align-content:stretch;
+
+                ul.nav{
+                    // align-self:flex-end;
+
+                    // border:1px solid gold;
+                    float: none;
+                    position: relative;
+
+                    display:flex;
+                    flex-direction:row;
+
+                    justify-content:flex-end;
+                    align-items:center;
+                    align-content:center;
+                    
+                    >li{
+                        // flex:0 0 auto;
+                        a{
+                            white-space: nowrap;
+                            // display:inline;
+                            height:$sitenav-height;
+                            line-height:$sitenav-height * 0.8;
+                        }
+
+
+                        ul li a{
+                            height:auto;
+                            line-height:initial;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+    .navbar-header {
+
+        .navbar-brand {
+            // opacity:0;    
+        }
+
+        position: relative;
+
+        .navbar-brand {
+            opacity:1;
+            transition:0.2s;
+
+            padding:0.5em;
+            margin:0 1em 0 1em;    
+
+            position:relative;
+            display:block;
+
+            @include ptBreakpoint($sm){
+                position:absolute;
+                display:flex;
+                align-items:center;
+            }
+
+            // width:180px;
+            height:100%;
+
+            z-index:99;
+
+            >img{
+                position:relative;
+                display:block;
+
+                width:100%;
+                height:auto;
+
+                z-index:199;
+            }
+
+        }
+
+
+        // The MENU button:
+        .navbar-toggle{
+            padding:0.5em 1em;
+
+            color:white;
+            background-color:$nav-btn-highlight;
+            position:absolute;
+            margin:0;
+            right:1em;
+            top:50%;
+            transform:translateY(-50%);
+            
+            border:0;
+
+            &:hover,&:focus{
+                color:white;
+                background-color:lighten($nav-btn-highlight, 5%);
+            }
+        }
+    }
+
+
+
+
+
+    #navbar{
+
+        text-transform: uppercase;
+        box-shadow:initial;
+        border-top:0;
+
+        li > a{
+            color:white;
+            padding:10px;
+            margin:5px 2px;
+            border:1px solid transparent;
+            
+            &:hover{
+                background-color:rgba($nav-btn-highlight, 0.5);
+            }
+            &.active{
+                background-color:$nav-btn-highlight;
+            }
+        }
+
+        li.open > a{
+            background-color: $nav-btn-highlight;
+        }
+
+        li.active a{
+            background-color:$nav-btn-highlight;
+        }
+    }
+}
+
+
+ 
+
+ 
+
+
+
+.social-media-icons{
+    margin:0;
+}
+
+
+
+.dropdown-menu{
+    // background-color: $nav-bgcolor;
+    // background-color: rgba(0,0,0,1);
+    background-color: rgba($nav-bgcolor, 0.98);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+.pt-quick-contact{
+
+    height:$quick-contact-height;
+
+    position:fixed;
+    top:0;
+    left:0; 
+    right:0;  
+
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    // justify-content:space-around;
+    // justify-content:flex-end;
+    align-items:center;
+
+    background-color:$quick-contact-bg;
+
+    padding:0 1em;
+
+    z-index:100;
+
+    @include ptBreakpoint($sm){
+        justify-content:flex-end;
+    }
+
+    h1,h2,h3,h4,h5,h6{
+        color:$pt-color-offwhite;
+    }
+
+    a{
+        font-weight:normal;
+        &:hover, &:focus{
+        }
+    }
+
+    ul{
+        margin:0;
+    }
+
+    .fa{
+        margin-right:0.5em;
+        margin-left:1em;
+    }
+
+    .social-media-icons{
+
+        margin:0 1em 0 2em;
+
+        .fa{
+            margin-right:0;
+            margin-left:0;
+        }
+
+        li {
+
+            a{      
+                font-size:1.5rem;
+
+                width: 1.6em;
+                height: 1.6em;
+                margin:0.2em;
+
+                color:white;
+                background-color:$pt-color-primary;
+
+                border:0px solid white;
+
+                &:hover, &:focus {
+                    color:white;
+                    background-color: $pt-color-highlight;
+                    // border:0px solid $pt-color-primary;
+                    border:0px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

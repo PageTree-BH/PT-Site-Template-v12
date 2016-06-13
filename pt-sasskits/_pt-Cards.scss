@@ -1,0 +1,519 @@
+
+
+/* 
+.boxo-cards{
+  // border:10px solid green;
+  // padding:1rem 0;
+  position:relative;
+
+  padding:0;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:flex-start;
+  
+  &.boxo-center{
+    // border:5px dotted green;
+    justify-content:center;
+  }
+  &.boxo-around{
+    justify-content:space-around;
+  }
+  &.boxo-between{
+    justify-content:space-between;
+  }  
+}
+*/
+
+ 
+
+/* 
+    <div class="pt-Card">
+        <div class="pt-card-img image-editor">
+            <img src="http://lorempixel.com/500/500/abstract"/>
+        </div>
+        <div class="pt-card-data">
+            <div class="pt-card-data-head">
+                <h2 class="pt-card-name text-editor">Firstname Lastname</h2>
+                <h3 class="pt-card-role text-editor">Role in Company</h3>
+                <div class="pt-card-contact text-editor">
+                <p>555-555-5555</p>
+                <p>email@domain.com</p>
+                </div>
+            </div>
+            <div class="pt-card-data-body text-editor">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quaerat, a temporibus unde quibusdam vitae quidem in explicabo illum beatae architecto rerum neque reprehenderit qui.</p>
+            </div>
+        </div>
+    </div>
+*/
+
+
+
+
+
+
+
+// @mixin pt-Card-Base(){
+
+
+
+
+$card-max-width-small:300px;
+
+
+
+
+
+
+.pt-card-img{
+  // width:300px;
+  width:100%;
+  height:auto;
+  overflow:hidden;
+  img{
+    width:100%;
+    height:auto;
+  }
+}
+
+.pt-card-data{
+  // color:#555;
+  padding:1em ;
+  
+  // *{
+  //   margin:1rem 0 0 0;
+  // }
+
+  flex:1 0 50%;
+  display:flex;
+  flex-direction:column;
+  
+  .pt-card-data-body{
+    flex:1 1 auto;
+  }
+
+}
+
+.pt-card-data-head{}
+  .pt-card-name{}
+  .pt-card-role{}
+  .pt-card-contact{}
+.pt-card-data-body{}
+.pt-card-data-footer{}
+
+
+
+
+
+
+
+@mixin pt-Card(){
+
+  // margin:0.2em;
+
+  position:relative;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  overflow:hidden;
+
+  // width:95%;
+  // max-width:300px;
+
+  width:50%;
+  // max-width:$card-max-width-small;
+  
+  
+  // background-color:#e1e1e1;
+
+
+  @include ptBreakpoint($sm){
+    width:50%;
+    // max-width:300px;
+    // min-width:200px;
+  }
+
+  @include ptBreakpoint($md){
+    width:33%;
+    // max-width:300px;
+    // min-width:200px;
+  }
+
+}
+
+
+
+
+
+
+
+
+@mixin pt-Card-Big(){
+
+  @include pt-Card();
+  
+  margin:auto;
+  width:100%;
+  // max-width:initial;
+  max-width:$card-max-width-small;
+
+  .pt-card-img{
+    // width:30%;
+    // flex:1 0 350px;
+    flex:1 0 50%;
+  }
+
+  .pt-card-data{
+    // width:70%;
+    flex:1 0 50%;
+    // display:flex;
+    // flex-direction:column;
+    // .pt-card-data-body{
+    //   flex:1 1 auto;
+    // }
+  }  
+
+
+  .pt-card-img{
+    width:100%;
+    height:auto;
+    min-height:20em;
+    max-height:initial;
+    // min-height:300px;
+    // max-height:500px;
+    img{
+      width:100%;
+      // max-width:500px;
+      height:auto;
+      // max-height:500px;
+    }
+  }
+
+
+  @include ptBreakpoint($sm){
+    flex-direction:row;
+    width:100%;
+    max-width:800px;
+    
+  }
+
+
+  @include ptBreakpoint($md){
+    .pt-card-img{
+      // width:30%;
+      // flex-grow:0 0 400px;
+
+      // max-height:400px;
+
+    }
+    .pt-card-data{
+      // width:70%;
+      flex-grow:1 0 70%;
+    }  
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+@mixin pt-Card-Split(){
+    
+  @include pt-Card();
+  
+  margin:auto;
+  width:100%;
+
+  .pt-card-img{
+    width:100%;
+    max-width:500px;
+    height:auto;
+    min-height:300px;
+    // background-image:url('http://lorempixel.com/500/500/abstract');
+    background-size:cover;
+
+  }
+
+  .pt-card-data-body{
+    // max-height:400px;
+    // overflow:scroll;
+  }
+
+  @include ptBreakpoint($sm){
+
+    flex-direction:row;
+    width:100%;
+    max-width:1000px; 
+    // max-width:initial; 
+    
+    // &.reverse{
+    //   flex-direction:row-reverse;
+    // }
+    .pt-card-img{
+      width:50%;    
+    }
+    .pt-card-data{
+      width:50%;
+    }
+  }
+}
+ 
+
+
+
+
+@mixin pt-Card-Split-Full(){
+    
+  @include pt-Card();
+
+  @include pt-Card-Split();
+
+
+  width:100%;
+  // max-width:100%;
+  // min-width:100%;
+
+  .pt-card-img{
+    width:100%;
+    max-width:100%;
+    min-width:100%;
+    height:auto;
+    img{
+      width:100%;
+      height:auto;
+    }
+  }
+
+  .pt-card-data{
+
+  }
+
+
+
+  @include ptBreakpoint($sm){
+
+    flex-direction:row;
+    // border:1px dotted blue;
+    width:100%;
+    max-width:100%; 
+    min-width:100%; 
+    
+    height:auto;
+    // max-height:50vw;
+
+    .pt-card-img{
+      width:50%;
+      min-width:50%;    
+      max-width:50%;    
+
+      // height:100%;
+      // max-height:50vw;
+      overflow:hidden;
+      
+    }
+
+    .pt-card-data{
+      width:50%;
+      min-width:50%;
+      max-width:50%;
+
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+
+    }
+
+
+  }
+
+
+}
+
+
+
+
+ 
+
+
+
+
+
+
+@mixin pt-Card-Big-Reverse(){
+
+    @include pt-Card-Big();
+
+    @include ptBreakpoint($sm){
+      flex-direction:row-reverse;
+    }
+}
+
+
+
+@mixin pt-Card-Split-Reverse(){
+
+    @include pt-Card-Split();
+
+    @include ptBreakpoint($sm){      
+      flex-direction:row-reverse;
+    }
+}
+
+
+
+@mixin pt-Card-Split-Full-Reverse(){
+
+    @include pt-Card-Split-Full();
+
+    @include ptBreakpoint($sm){      
+      flex-direction:row-reverse;
+    }
+}
+
+
+
+
+ 
+
+
+
+
+.pt-Card, 
+.pt-card{
+  @include pt-Card();
+}
+
+.pt-Card-Big, 
+.pt-card-big{
+  @include pt-Card-Big();
+}
+
+.pt-Card-Big-Reverse, 
+.pt-card-big-reverse,
+.pt-card-big.pt-flipped{
+  @include pt-Card-Big-Reverse();
+}
+
+.pt-Card-Split, 
+.pt-card-split{
+  @include pt-Card-Split();
+}
+
+.pt-Card-Split-Reverse, 
+.pt-card-split-reverse,
+.pt-card-split.pt-flipped{
+  @include pt-Card-Split-Reverse();
+}
+
+.pt-Card-Split-Full, 
+.pt-card-split-full{
+  @include pt-Card-Split-Full();
+}
+
+.pt-Card-Split-Full-Reverse,
+.pt-card-split-full-reverse,
+.pt-card-split-full.pt-flipped{
+  @include pt-Card-Split-Full-Reverse();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .imInEditMode .pt-Card .pt-card-img .image-editor,
+
+  .imInEditMode .pt-card .pt-card-img .image-editor
+  {
+    // width:300px !important;
+    // height:300px !important;
+
+      width:500px;
+      height:350px;
+
+  }
+
+
+  .imInEditMode .pt-Card-Big .pt-card-img .image-editor,
+  .imInEditMode .pt-Card-Big .pt-card-img,
+  .imInEditMode .pt-Card-Big-Reverse .pt-card-img,
+  .imInEditMode .pt-Card-Big-Reverse .pt-card-img .image-editor,
+
+  .imInEditMode .pt-card-big .pt-card-img .image-editor,
+  .imInEditMode .pt-card-big .pt-card-img,
+  .imInEditMode .pt-card-big-reverse .pt-card-img,
+  .imInEditMode .pt-card-big-reverse .pt-card-img .image-editor
+  {
+    width:500px !important;
+    height:500px !important;
+    flex-basis:500px !important;
+  }
+
+
+
+  .imInEditMode .pt-Card-Split .pt-card-img .image-editor,
+  .imInEditMode .pt-Card-Split-Reverse .pt-card-img .image-editor,
+
+  .imInEditMode .pt-card-split .pt-card-img .image-editor,
+  .imInEditMode .pt-card-split-reverse .pt-card-img .image-editor
+  {
+    // width:500px !important;
+    height:500px !important;
+    width:50vw !important; 
+  }
+
+
+
+  .imInEditMode .pt-Card-Split-Full .pt-card-img .image-editor,
+  .imInEditMode .pt-Card-Split-Full-Reverse .pt-card-img .image-editor,
+
+  .imInEditMode .pt-card-split-full .pt-card-img .image-editor,
+  .imInEditMode .pt-card-split-full-reverse .pt-card-img .image-editor{
+    width:50vw !important;
+    height:50vw !important;
+  }
+   
+ 
+
+  .pt-card-img{
+    // background-color:pink;
+  }
+ 
+ 
+
+  .pt-card-img .image-editor{
+    background-color:transparent;
+    width:100% !important;
+    height:100% !important;
+  }
+
+
+
+
+ 
+
+
+
+
+

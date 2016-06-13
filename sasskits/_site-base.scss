@@ -1,0 +1,661 @@
+
+
+
+ 
+
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+ 
+// BASIC FUCK-OFF-BOOTSTRAP STYLE-OVERWRITES:
+.container{
+    width:100%;
+    // max-width:1500px;
+    margin:auto;
+    padding:0;
+    .row{
+        padding:0em;
+        margin:0em;
+    }
+}
+
+
+
+.pt-sizer{
+  z-index:9999999999999;
+}
+
+
+// .viewport{
+//   position:relative;
+// }
+   
+
+.pt-container{
+    width:100%;
+    max-width:1600px;
+    // max-width:initial;
+    position: relative;
+    margin-left:auto;
+    margin-right:auto;
+    padding:0;
+
+}
+
+
+
+
+
+
+
+
+
+
+.bg-red{
+    @include ptZoneColors( indianred, #ffffff, #000 );
+}
+
+.bg-green{
+    @include ptZoneColors( lightgreen, #ffffff, #000 );
+}
+
+.bg-blue{
+    @include ptZoneColors( lightblue, #ffffff, #000 );
+}
+
+.bg-orange{
+    @include ptZoneColors( orange, #ffffff, #000 );
+}
+
+.bg-grey{
+    @include ptZoneColors( lightgrey, #ffffff, #000 );
+}
+
+
+
+
+
+
+
+ 
+// .bg-draft{
+//   background-image:url($img-url+'header-bg-draft-sm.jpg');
+//   background-position:50% 50%;
+//   background-size:cover;
+
+//   @include ptBreakpoint($sm){
+//     background-image:url($img-url+'header-bg-draft-md.jpg');
+//   }
+
+//   @include ptBreakpoint($md){
+//     background-image:url($img-url+'header-bg-draft-lg.jpg');
+//   }
+// }
+
+
+// .bg-barrels{
+//   background-image:url($img-url+'barrels-sm.jpg');
+//   background-position:50% 50%;
+//   background-size:cover;
+
+//   @include ptBreakpoint($sm){
+//     background-image:url($img-url+'barrels-md.jpg');
+//   }
+
+//   @include ptBreakpoint($md){
+//     background-image:url($img-url+'barrels-lg.jpg');
+//   }
+// }
+
+
+
+.bg-r1.bg-r1{
+    background-image:url('http://lorempixel.com/400/300/abstract/1/');
+    background-position:center;
+    background-size:cover;
+
+    @include ptBreakpoint($sm){
+        background-image:url('http://lorempixel.com/800/600/abstract/1/');
+    }
+
+    @include ptBreakpoint($md){
+        background-image:url('http://lorempixel.com/1200/1000/abstract/1/');
+    }
+
+    @include ptBreakpoint($lg){
+        background-image:url('http://lorempixel.com/1800/1400/abstract/1/');
+    }
+}
+
+
+.bg-r2.bg-r2{
+    background-image:url('http://lorempixel.com/400/300/nature/2/');
+    background-position:center;
+    background-size:cover;
+
+    @include ptBreakpoint($sm){
+        background-image:url('http://lorempixel.com/800/600/nature/2/');
+    }
+
+    @include ptBreakpoint($md){
+        background-image:url('http://lorempixel.com/1200/1000/nature/2/');
+    }
+
+    @include ptBreakpoint($lg){
+        background-image:url('http://lorempixel.com/1800/1400/nature/2/');
+    }
+}
+
+.bg-r3.bg-r3{
+    background-image:url('http://lorempixel.com/400/300/cats/3/');
+    background-position:center;
+    background-size:cover;
+
+    @include ptBreakpoint($sm){
+        background-image:url('http://lorempixel.com/800/600/cats/3/');
+    }
+
+    @include ptBreakpoint($md){
+        background-image:url('http://lorempixel.com/1200/1000/cats/3/');
+    }
+
+    @include ptBreakpoint($lg){
+        background-image:url('http://lorempixel.com/1800/1400/cats/3/');
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.before-texture{
+    
+    position:relative;
+    
+    &:before {
+        content:'';
+        position:absolute; top:0; left:0; bottom:0; right:0;
+        width:100%; height:100%;
+        display:block;
+        z-index:100;
+        background: url('http://www.domain40.pagetree.com/app/webroot/userfiles/273/Image/tpl/slide-texture.png') top left;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#section-intro{
+  
+  @include ptPadding(2em 1em, 4em 2em);
+
+
+  font-size:1.2em;
+  line-height:2em; 
+  text-align:left;
+
+
+
+  @include ptBreakpoint($sm){
+    font-size:1.5em;
+    line-height:2em; 
+  }
+
+
+  @include ptBreakpoint($md){
+    // padding:3em 2em;
+    text-align:center;
+    font-size:em;
+    line-height:1.8em;
+  
+    .cssvhunit &{
+      min-height:80vh;
+      @include ptPos(5);
+    }
+
+    p{
+      text-align:center;
+    }
+  }
+  
+  p{
+
+    text-transform: uppercase;
+    // text-align:center;
+
+    max-width:1000px;
+    margin:auto;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#section-truck{
+  
+  background-image:url($img-url+'truck-lg.jpg');
+  background-position:100% 50%;
+  background-size:cover;
+  
+  @include ptBreakpoint($sm){
+    background-position:50% 50%;
+    background-size:cover;
+  }
+  
+  .cssvhunit &{
+    // min-height:50vh;
+  }
+  
+  padding:5em 0;
+  color:white;
+  text-align:center;
+  
+  .ab-a{
+    min-height:initial;
+  }
+
+  .ab-b{
+    padding:2em;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#section-brands{
+  @include ptPadding(1em 2em);
+  background-color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pt-slick-1{
+  
+  margin:3em 0 0 0;
+  padding:0;
+  // display:flex;
+  // justify-content: stretch;
+  // align-items:center;
+  // align-content:center;
+
+
+  .slick-track{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    align-content:center;
+  }
+
+
+  .slick-slide{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    align-content:center;
+    // img{
+    //   // margin:auto;
+    // }
+  }
+
+
+
+  .slick-prev, 
+  .slick-next{
+    // background-color:grey;
+    // color:red;
+    height:50px;
+    // width:50px;
+    // border:1px solid red;
+    z-index:50;
+    // font-size:2em;
+    
+    &:before{
+      color:white;
+      font-size:50px;
+    }
+
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+.testyspy{
+    position:fixed;
+    right:0;
+    top:50%;
+    transform:translateY(-50%);
+    // border:1px solid red;
+    z-index: 99999;
+    background-color:white;
+    
+
+
+    ul li{
+        &.active{
+            a{
+                color:white;
+                background-color:$pt-color-primary;
+                &:hover, &:focus, &:active, &:focus{
+                    color:white;
+                    background-color:$pt-color-highlight;
+                }  
+            }
+        }
+        a{
+            color:$pt-color-primary;
+            &:hover, &:focus, &:active, &:focus{
+                color:white;
+                background-color:$pt-color-primary;
+            }   
+        }
+    }
+}
+
+
+
+  
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+/* 
+<section class="pt-zone-60">
+  <div class="flexslider css-flexslider">
+    <ul class="slides">
+      <li data-pt-imgswap>
+        <img class="" src="http://placehold.it/500x300" >
+      </li>
+      <li data-pt-imgswap>
+        <img class="" src="http://placehold.it/500x301" >
+      </li>
+      <li data-pt-imgswap>
+        <img class="" src="http://placehold.it/500x302" >
+      </li>
+      <li data-pt-imgswap>
+        <img class="" src="http://placehold.it/500x303" >
+      </li>
+    </ul>
+  </div>
+</section>
+
+<script>
+ $(window).load(function() {
+  $('.css-flexslider').flexslider({
+    animation: "fade"
+  });
+});   
+</script>
+ 
+
+ */
+
+
+
+.css-flexslider{
+  // border:1px solid red; 
+
+  display:block;
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;left:0;bottom:0;left:0;
+
+  ul.slides{
+    // border:1px solid gold;
+    display:block;
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;left:0;bottom:0;left:0;
+  
+    li{
+      // border:1px solid green;
+
+      display:block;
+      position:absolute;
+      width:100%;
+      height:100%;
+      top:0;left:0;bottom:0;left:0;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ul.social-media-icons {
+
+  list-style: none;
+  // margin:1em;
+  padding:0em;
+
+  // display:flex;
+  // width:300px;
+  display:inline-flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items:center;
+  align-content:center;
+  flex-wrap:nowrap;
+  // width:100%;
+
+
+  li {
+
+  display:inline-flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items:center;
+  align-content:center;
+  flex-wrap:nowrap;
+
+    a {      
+  
+      font-size:2rem;
+    
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-items:center;
+      align-content:center;
+      flex-wrap:nowrap;
+
+
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 50%;
+      text-decoration:none;
+      margin:0.5rem;
+      padding:0;
+
+      border:2px solid white;
+      color:white;
+      background-color:transparent;
+
+      &:hover, &:focus {
+        background-color: $pt-color-primary;
+        color:white;
+        border:2px solid $pt-color-primary;
+      }
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+

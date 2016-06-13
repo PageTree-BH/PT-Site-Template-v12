@@ -1,0 +1,150 @@
+
+/* 
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+														BASIC TYPOGRAPHY
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ */
+
+
+
+ 
+
+// @import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+// @import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+
+
+
+$font-header: 'Oswald', Helvetica, Arial, sans-serif;
+$font-body: 'Droid Sans', Helvetica, Arial, sans-serif;
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+:root{
+	font-size:16px;
+}
+html{ 
+	font: 100%/1;
+}
+body{
+	font-family: $font-body;
+}
+
+
+
+h1,h2,h3,h4,h5,h6{
+	font-family: $font-header;
+	text-transform:uppercase;
+	// letter-spacing:0.1em;	
+	// font-weight:300;
+
+	>span{
+		text-transform:capitalize;
+		font-style:italic;
+		display:block;
+		font-size:0.7em; 
+		// color:$apg-text-dark-2;
+		margin-bottom:1em;
+		margin-top:0.7em;
+	}
+
+}
+
+
+p{
+	// font-size:1rem;
+}
+
+
+
+// .hr1{
+// 	height:15px;
+// 	width:100%;
+// 	border:0;
+// 	// background-image:url($img-url+'divider.png');
+// 	background-position:center center;
+// 	background-repeat:no-repeat;
+// }
+
+
+ 
+
+
+
+
+.btn-ghost{
+  color:white;
+  background-color: transparent;
+  border: 1px solid white;
+  
+  text-transform: uppercase;
+  border-radius:0;
+  transition:0.2s;
+
+  &:hover, &:focus{
+    border: 1px solid $bci-orange;
+    background-color:$bci-orange;
+    color:white;
+  }
+
+}
+
+
+
+.btn-primary,
+.btn-orange{
+  color:white;
+  background-color: $bci-orange;
+  border: 1px solid $bci-orange;
+  
+  text-transform: uppercase;
+  border-radius:0;
+  transition:0.1s;
+
+  &:hover, &:focus{
+    border: 1px solid $bci-orange;
+    background-color:white;
+    color:$bci-orange;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,72 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pt-card-30-70{
+  
+  display:flex;
+  margin:auto;
+  width:100%;
+  flex-direction:row;
+  
+  &.pt-flipped{
+    flex-direction:row-reverse;
+  }
+  
+  .pt-flipped & {
+    >div:first-child{
+      order:1;
+    }
+  }
+
+  .pt-card-img{
+    width:30%;
+
+    height:auto;
+    min-height:20em;
+
+    img{
+      width:100%;
+      height:auto;
+    }
+  }
+
+  .pt-card-data{
+    width: 70%;
+  }  
+
+  @include ptBreakpoint($sm){
+
+    .pt-card-img{
+      width: 50%;
+    }
+    .pt-card-data{
+      width: 50%;
+    } 
+    
+  }
+
+
+  @include ptBreakpoint($md){
+    .pt-card-img{
+
+    }
+    .pt-card-data{
+
+    }  
+  }
+
+}
+
+
+
+

@@ -1,0 +1,149 @@
+
+/* 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+												BOOTSTRAP CUSTOMIZATIONS: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+
+
+
+// .container .jumbotron, 
+// .jumbotron{
+// 	margin:0;
+// 	padding:0;
+// }
+
+
+/* add to div with class of ".row" */
+// .no-gutter > [class*='col-'] {
+//     padding-right:0;
+//     padding-left:0;
+// }
+// .no-gutter .container {
+//     padding-right:0;
+//     padding-left:0;
+// }
+
+
+// .row{
+// 	margin-left:0;
+// 	margin-right:0;
+// }
+
+
+
+
+
+/* BUTTONS AND LINKS: */
+a { 
+	font-weight:bold;
+	color: $pt-color-primary;
+
+	transition:0.3s;
+	&:hover,&:focus {
+		color: lighten($pt-color-primary, 10%);
+		text-decoration:underline;
+	}
+}
+
+a:focus{
+	outline:none;
+	outline-offset:0;
+}
+
+.nav a, 
+a.btn, 
+.btn a{
+	text-decoration: none;
+	font-weight:normal;
+}
+
+// .btn-default, 
+.btn-primary{
+	color:$pt-color-white;
+	background-color: $pt-color-primary;
+	border: 1px solid transparent;
+    text-transform: uppercase;
+	border-radius:0;
+	margin:10px;
+}
+
+// .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active,
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+	color: $pt-color-primary;
+	background-color:desaturate(lighten($pt-color-primary, 70), 30);
+	border-color: $pt-color-primary;
+}
+
+
+
+
+
+
+
+// ul.nav-centered {
+// 	text-align: center;
+// }
+
+// ul.nav-centered > li {
+// 	float: none;
+// 	display: inline-block;
+// 	padding:0;
+// 	min-width:20%;
+// 	margin:0;
+// }
+
+
+
+
+
+.nav-pills{
+	margin:30px auto 10px auto;
+}
+
+.nav-pills > li > a {
+	text-transform: uppercase;
+	border-radius:0;
+	border:1px solid $pt-color-primary;
+	padding:0.2em 0.5em 0.1em 0.5em;
+}
+
+.nav-pills > li.active > a, 
+.nav-pills > li.active > a:hover, 
+.nav-pills > li.active > a:focus {
+	color:$pt-color-white;
+	background-color:$pt-color-primary;
+}
+ 
+.tab-content{
+	padding:15px;
+	@include ptBreakpoint($sm){
+		padding:0;
+	}
+} 
+
+
+
+
+
+
+

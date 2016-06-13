@@ -1,0 +1,193 @@
+/**
+ * https://gist.github.com/BenMorel/e9e34c08360ebbbd0634
+ * 
+ * Fix for vw, vh, vmin, vmax on iOS 7.
+ * http://caniuse.com/#feat=viewport-units
+ *
+ * This fix works by replacing viewport units with px values on known screen sizes.
+ *
+ * iPhone 6 and 6 Plus cannot run iOS 7, so are not targeted by this fix.
+ * Target devices running iOS 8+ will incidentally execute the media query,
+ * but this will still produce the expected result; so this is not a problem.
+ *
+ * As an example, replace:
+ *
+ *   height: 50vh;
+ *   font-size: 5vmin;
+ *
+ * with:
+ *
+ *   @include ptViewport(height, 50vh);
+ *   @include ptViewport(font-size, 5vmin);
+ */
+/* 
+    NAVIGATION - TOPBAR #pt-topbar:
+ */
+#pt-topbar {
+  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.2); }
+  #pt-topbar.bg-solid {
+    background-color: rgba(0, 0, 0, 0.9) !important; }
+  #pt-topbar.is-fixed-top {
+    position: fixed;
+    top: 0; }
+  #pt-topbar .has-quick-contact {
+    top: 3em; }
+  .has-quick-contact #pt-topbar.is-fixed-top {
+    top: 3em; }
+  #pt-topbar.nav-is-open {
+    background-color: rgba(0, 0, 0, 0.9); }
+  @media screen and (min-width: 768px) {
+    #pt-topbar .pt-container #navbar ul.nav > li a {
+      height: 80;
+      line-height: 64; } }
+  #pt-topbar .navbar-header .navbar-toggle {
+    color: white;
+    background-color: orangered; }
+    #pt-topbar .navbar-header .navbar-toggle:hover, #pt-topbar .navbar-header .navbar-toggle:focus {
+      color: white;
+      background-color: #ff581a; }
+  #pt-topbar #navbar li > a {
+    border: 1px solid transparent; }
+    #pt-topbar #navbar li > a:hover {
+      background-color: rgba(255, 69, 0, 0.5); }
+    #pt-topbar #navbar li > a.active {
+      background-color: orangered; }
+  #pt-topbar #navbar li.open > a {
+    background-color: orangered; }
+  #pt-topbar #navbar li.active a {
+    background-color: orangered; }
+  #pt-topbar .dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.98); }
+
+.pt-quick-contact {
+  height: 3em;
+  background-color: #e1e1e1; }
+  .pt-quick-contact h1, .pt-quick-contact h2, .pt-quick-contact h3, .pt-quick-contact h4, .pt-quick-contact h5, .pt-quick-contact h6 {
+    color: #fdf6ee; }
+  .pt-quick-contact .social-media-icons li a {
+    color: white;
+    background-color: brown; }
+    .pt-quick-contact .social-media-icons li a:hover, .pt-quick-contact .social-media-icons li a:focus {
+      color: white;
+      background-color: orangered; }
+
+/* 
+
+
+
+ */
+/* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ */
+.sidr {
+  background-color: brown; }
+  .sidr ul {
+    border-top: 1px solid #7c2020;
+    border-bottom: 1px solid #cc3636; }
+    .sidr ul li {
+      border-top: 1px solid #cc3636;
+      border-bottom: 1px solid #7c2020; }
+      .sidr ul li:hover {
+        background-color: #7c2020; }
+  .sidr a {
+    color: #fff; }
+
+#sidr-topbar {
+  background-color: brown; }
+  .js #sidr-topbar {
+    height: 70px; }
+
+#sidr-menu-btn {
+  background-color: #7c2020;
+  width: 70px;
+  height: 70px; }
+  #sidr-menu-btn:hover, #sidr-menu-btn:focus {
+    text-decoration: none;
+    background-color: #2b0b0b; }
+
+#sidr-close-btn {
+  right: 300px;
+  height: 70px;
+  width: 70px;
+  background-color: #7c2020; }
+  #sidr-close-btn:hover, #sidr-close-btn:focus {
+    background-color: #2b0b0b; }
+
+#pt-sidr {
+  background-color: brown; }
+  #pt-sidr a {
+    color: white; }
+    #pt-sidr a:hover, #pt-sidr a:focus {
+      color: blue; }
+  #pt-sidr .contact-links {
+    min-height: 70px; }
+    #pt-sidr .contact-links a:hover, #pt-sidr .contact-links a:focus {
+      background-color: #7c2020; }
+  #pt-sidr .caret {
+    border-top-color: #fff; }
+
+.sidr-cover {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+/* 
+
+
+
+
+
+
+
+
+
+
+ */
+a {
+  color: brown; }
+  a:hover, a:focus {
+    color: #cc3636; }
+
+.btn-primary {
+  color: #fff;
+  background-color: brown; }
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+    color: brown;
+    background-color: white;
+    border-color: brown; }
+
+.nav-pills > li > a {
+  border: 1px solid brown; }
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: #fff;
+  background-color: brown; }
+
+ul.nav li.active a {
+  color: white;
+  background-color: brown; }
+  ul.nav li.active a:hover, ul.nav li.active a:focus, ul.nav li.active a:active, ul.nav li.active a:focus {
+    color: white;
+    background-color: orangered; }
+ul.nav li a {
+  color: brown; }
+  ul.nav li a:hover, ul.nav li a:focus, ul.nav li a:active, ul.nav li a:focus {
+    color: white;
+    background-color: brown; }
