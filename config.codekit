@@ -68,7 +68,7 @@
 		},
 	"\/_deploy\/assets\/SITE-VARS_CMS.css": {
 		"fileType": 16,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_deploy\/assets\/SITE-VARS_CMS.css",
 		"outputAbbreviatedPath": "No Output Path",
@@ -100,6 +100,15 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_deploy\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/css\/SITE-VARS_CMS.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/SITE-VARS_CMS.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -3463,7 +3472,7 @@
 		},
 	"\/sasskits\/Navigation-Sidr.kit": {
 		"fileType": 2048,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sasskits\/Navigation-Sidr.kit",
 		"outputAbbreviatedPath": "\/sasskits\/Navigation-Sidr.html",
@@ -3685,9 +3694,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/SITE-VARS_CMS.scss",
-		"outputAbbreviatedPath": "\/css\/SITE-VARS_CMS.css",
+		"outputAbbreviatedPath": "\/_deploy\/assets\/SITE-VARS_CMS.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 1,

@@ -1,20 +1,12 @@
 
 
-// COLORS:
-// HELLO 
-
-
-
 @import "pt/_PT-MIXINS";
 
 
 
-
-
-
-$pt-color-primary	:	brown	; 
+$pt-color-primary	:	gold	; 
 $pt-color-secondary	:	lightblue	; 
-$pt-color-highlight	: 	lime 	; 
+$pt-color-highlight	: 	orange 	; 
 
 
 
@@ -23,29 +15,25 @@ $pt-color-offwhite	: #fdf6ee 	;
 $pt-color-black		: #000		;
 
 
- 
-    
- 
-
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-/*     NAVIGATION - TOPBAR #pt-topbar:    Based on Topbar      */
- 
+/*     NAVIGATION - TOPBAR #pt-topbar:     */
+
+// QUICK CONTACT IS ABOVE THE ACCTUAL TOPBAR MENU :
 $quick-contact-height:3em;
 $quick-contact-bg: #e1e1e1;
 
+// TOPBAR BG COLOR:
 // $nav-bgcolor: rgba(0,0,0,0.9);
 $nav-bgcolor: rgba($pt-color-primary ,0.9);
 
-
+// HIGHLIGHT COLOR:
 $nav-btn-highlight: $pt-color-highlight;
- 
+
+// THE HEIGHT OF THE TOP BAR
 $sitenav-height: 80px;
-
-
-
 
 
 
@@ -55,41 +43,37 @@ $sitenav-height: 80px;
 
 /*    SIDR.js   SIDE MENU    */
 
-// Colors
+// COLORS FOR SIDR MENU
 $sidr-background: $pt-color-primary;
 $sidr-text-color: #fff;
 
-// Width
+// WIDTH OF OPEN SIDR MENU
 $sidebar-width: 300px;
 $sidebar-width-neg: -$sidebar-width;
 
+// PAGE COVERS DURING OPEN SIDR
 $sidr-cover-color: rgba(0,0,0,0.8);
 
+// HEIGHT OF TOPBAR
 $sidr-topbar-height: 70px;
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /* 
+*
+*
+*
     NAVIGATION - TOPBAR #pt-topbar:
-    Based on Topbar
+*
+* 
 */
  
 /* 
@@ -187,7 +171,6 @@ $sitenav-height: 80;
     .dropdown-menu{
         background-color: rgba($nav-bgcolor, 0.98);
     }
-
 }
 
 
@@ -237,12 +220,18 @@ $sitenav-height: 80;
 
 
 /* 
-
-
+*
+*
+*
+*
+* 
     SIDR.js   SIDE MENU 
-
-
- */
+*
+*
+*
+*
+* 
+*/
 
 
 /* 
@@ -260,38 +249,9 @@ $sidr-topbar-height: 70px;
  */
 
 
- 
-
-
-
-
     .sidr{
 
-        background-color:$sidr-background;
-
-        ul {
-            border-top: 1px solid darken($sidr-background, 10%);
-            border-bottom: 1px solid lighten($sidr-background, 10%);
-            li {
-                border-top: 1px solid lighten($sidr-background, 10%);
-                border-bottom: 1px solid darken($sidr-background, 10%);
-
-                &:hover{
-                    background-color:darken($sidr-background, 10%);
-                }
-            }
-        }
-
-        a { 
-            color: $pt-color-white;
-            &:hover,&:focus {
-                // color: lighten($pt-color-highlight, 10%);
-            }
-        }
-
     }
-
-
 
     #sidr-topbar {
 
@@ -300,7 +260,6 @@ $sidr-topbar-height: 70px;
         }
 
         background-color:$sidr-background;
-
     }
 
 
@@ -331,7 +290,13 @@ $sidr-topbar-height: 70px;
 
 
 
+
+
+
+
+
     #pt-sidr{
+
         background-color:$sidr-background;
         
         a{
@@ -353,7 +318,47 @@ $sidr-topbar-height: 70px;
         .caret{
             border-top-color:$sidr-text-color;
         }
+
+        
+        nav ul {
+            border-top: 1px solid darken($sidr-background, 10%);
+            border-bottom: 1px solid lighten($sidr-background, 10%);
+
+            li {
+                border-top: 1px solid lighten($sidr-background, 10%);
+                border-bottom: 1px solid darken($sidr-background, 10%);
+
+                &:hover{
+                    background-color:darken($sidr-background, 10%);
+
+                    ul{
+                        background-color:darken($sidr-background, 10%);
+
+                        li{
+                            background-color:darken($sidr-background, 10%);
+                            &:hover{
+                                background-color:darken($sidr-background, 15%);
+                            }
+                        }
+                    }
+                }
+                ul li:last-child {
+                    border-bottom:0;                    
+                }
+            }
+        }
+
+        a { 
+            color: $pt-color-white;
+            &:hover,&:focus {
+                // color: lighten($pt-color-highlight, 10%);
+            }
+        }
     }
+
+
+
+
 
 
     .sidr-cover{
@@ -361,24 +366,22 @@ $sidr-topbar-height: 70px;
     }
 
 
-
-
-
-
+    
 
 
 
 
 /* 
-
-
+*
+*
+*
+*
     BOOTSTRAP BUTTON / LINK / NAV STYLES
-
-
+*
+*
+*
+*
  */
-
-
-
 
 a { 
     color: $pt-color-primary;
@@ -435,6 +438,93 @@ ul.nav {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

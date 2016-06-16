@@ -1,8 +1,7 @@
 
  
  
-// BREAKPOINT SIZER :
-
+// BREAKPOINT SIZER - USES SAME BREAKPOINTS AS DEFAULT BOOTSTRAP:
 $xs: ( min:  300px );
 $sm: ( min:  768px );
 $md: ( min:  992px );
@@ -129,23 +128,28 @@ $xl-only: ( min: map-get($xl, min) );
 
 
 
+
+
+
 @mixin ptZoneColors ($bg, $h1, $p, $h3:$h1){
 
-  background-color:$bg;
+    background-color:$bg;
 
-  color:$p;
-
-  h1, h2{
-    color:$h1;
-  }
-  h3, h4, h5{
-    color:$h3;
-  } 
-  p{
     color:$p;
-  }
+
+    h1, h2{
+        color:$h1;
+    }
+    h3, h4, h5{
+        color:$h3;
+    } 
+    p{
+        color:$p;
+    }
 
 }
+
+
 
 
 
@@ -229,6 +233,7 @@ $xl-only: ( min: map-get($xl, min) );
  *   @include ptViewport(height, 50vh);
  *   @include ptViewport(font-size, 5vmin);
  */
+
 @mixin ptViewport($property, $value) {
 // @mixin viewport-unit($property, $value) {
   #{$property}: $value;
@@ -272,6 +277,20 @@ $xl-only: ( min: map-get($xl, min) );
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

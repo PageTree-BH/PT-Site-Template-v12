@@ -18,14 +18,12 @@ Modernizr:true, jQuery:true, ssm:true
     
  
 
-PT._isDevMode = true;
+// PT._isDevMode = true;
 
 $(function() { 
     // console.log('site specific js file');
 
-
     SITE.init();
-
 
 });
 
@@ -50,14 +48,8 @@ var SITE = {
         // PT.addRandomClass('.homeplate', ['bg-r1', 'bg-r2', 'bg-r3']);
 
     }
-
-
-
-
  
     ,newFunction: function() { }
-
-
 
 
 };
