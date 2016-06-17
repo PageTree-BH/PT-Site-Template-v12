@@ -3463,7 +3463,7 @@
 		},
 	"\/sasskits\/Navigation-Sidr.kit": {
 		"fileType": 2048,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sasskits\/Navigation-Sidr.kit",
 		"outputAbbreviatedPath": "\/sasskits\/Navigation-Sidr.html",

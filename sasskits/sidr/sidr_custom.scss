@@ -376,8 +376,19 @@ body{
 	display:flex;
 
 }
-// 
-// 
+
+
+
+
+.caret{
+	transform:rotate(-90deg);
+	transition:0.2s;
+	.open & {
+		transform:rotate(0);
+	}
+}
+
+
 
 /* 
 

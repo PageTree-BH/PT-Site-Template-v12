@@ -50,74 +50,8 @@
 
 
 
-
-
-
-<!-- 
-
-    <div class="pt-quick-contact">
-
-        <ul class="social-media-icons">
-            <li><a href="#" target="_blank"><i class="fa fa-account"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fa fa-login"></i></a></li>
-            <li><i class="">&nbsp;&nbsp;&nbsp;</i></li>
-            <li><a href="#" target="_blank"><i class="fa fa-phone"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fa fa-envelope"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fa fa-map-marker"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-        </ul>
-
-    </div>
-
-     -->
-
-
-
-<div id="pt-topbar" class="navbar navbar-default " >
-
-    <div class="pt-container">
-
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <i class="fa fa-bars"></i>
-            </button>
-            <a class="navbar-brand" href="#"><img src="http://placehold.it/100x50/?text=LOGO" alt="logo"></a>
-        </div>
-
-        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-
-            <ul class="nav navbar-nav">
-
-                <li id="main_nav_item_0" class="main_nav_item "><a tabindex="-1" href="#">Home</a></li>
-                <li id="main_nav_item_1" class="main_nav_item "><a tabindex="-1" href="#">About</a></li>
-                <li id="main_nav_item_2" class="main_nav_item "><a tabindex="-1" href="#">Contact</a></li>
-                <li id="main_nav_item_4" class="main_nav_item dropdown"><a tabindex="-1" href="#" role="button" data-toggle="dropdown" class="dropdown-toggle">Sub Pages <b class="caret"></b></a>
-                    
-                    <ul role="menu" class="dropdown-menu multi-level" aria-labelledby="dropdownMenu">
-                        <li class=""><a tabindex="-1" href="#">One</a></li>
-                        <li class=""><a tabindex="-1" href="#">Two</a></li>
-                        <li class=""><a tabindex="-1" href="#">Three</a></li>
-                    </ul>
-
-                </li>
-                           
-                <li id="main_nav_item_5" class="main_nav_item "><a tabindex="-1" href="#">New Page</a></li>
-                 
-            </ul>
-
-        </div>
-
-    </div>
-
-</div> 
-
-
-
-
-
+ 
+<!-- @ import sasskits/Navigation-Topbar.kit -->
 
 
 
@@ -135,7 +69,65 @@
 
 
 
-          <!-- @ import sasskits/Navigation-Sidr.kit -->
+          
+
+
+
+
+
+
+
+<div class="sidr-cover"></div>
+
+
+<a id="sidr-menu-btn" href="#sidr-main"><i class="fa fa-bars"></i></a>
+
+
+<div id="sidr-topbar" data-pt-sticky >
+<!-- <div id="sidr-topbar" > -->
+    <div class="logoholder"><img  src="http://placehold.it/100x50/?text=LOGO" alt="logo"></div>
+</div>
+
+
+
+
+<div id="pt-sidr">
+<!-- <div id="pt-sidr" data-sidr-side="left"> -->
+<!-- <div id="pt-sidr" data-sidr-side="right"> -->
+    
+    <div class="logoholder"><img class="logo" src="http://placehold.it/100x50/?text=LOGO" alt="logo"></div>
+
+    <div class="contact-links">
+        <a href="#"><i class="fa fa-envelope"></i></a>
+        <a href="#"><i class="fa fa-phone"></i>  (865) 577-5541 </a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#">Sample link 1</a></li>
+            <li>
+                <a href="#">Sample link 2</a>
+                <ul>
+                    <li><a href="#">Child link 1</a></li>
+                    <li><a href="#">Child link 2</a></li>
+                    <li><a href="#">Child link 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Sample link 3</a></li>
+            <li><a href="#">Sample link 4</a></li>
+            <li><a href="#">Sample link 5</a></li>
+            <li><a href="#">Sample link 6</a></li>
+        </ul>
+    </nav>
+
+</div>
+
+
+
+
+
+ 
 
 
 
@@ -170,7 +162,7 @@
     <!-- <section id="" class="ab-5050 bg-green pt-zone-60" style="z-index:9999999;" data-pt-sticky='{"offset":"#pt-topbar", "offset2":".pt-quick-contact" }' > -->
 
 
-    <section id="" class="ab-5050 pt-zone-50 bg-black" style="z-index:9999999;" data-pt-sticky='{"offset":"#pt-topbar", "offset2":"20", "duration":".testyspy" }' >
+    <section id="" class="ab-5050 pt-zone-50 bg-black" data-pt-sticky='{"offset":"#pt-topbar", "offset2":"20", "duration":".testyspy" }' >
         <div class="ab-a" >
             A
         </div>

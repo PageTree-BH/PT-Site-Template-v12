@@ -708,6 +708,7 @@ var PT = {
 // <div data-pt-transition="fade-in">
 
     ,buildTransitions: function(_DURATION) {
+        
         PT.log('PT.buildTransitions()', 'green');
 
         // if (PT._BreakPoint === 'medium') {
@@ -986,10 +987,7 @@ var PT = {
 
 
 
-
 /*
-
-
     li{
         &.active{
             a{
@@ -1010,18 +1008,17 @@ var PT = {
         }
     }
 
-
     <div class="testyspy">
         <ul class="nav" data-pt-spy > 
-            <li><a data-pt-spy-to="#section-intro"   href="#section-intro">intro</a></li>
-            <li><a data-pt-spy-to="#section-truck"   href="#section-truck">truck</a></li>
-            <li><a data-pt-spy-to="#section-brands"  href="#section-brands">brands</a></li>
+            <li><a data-pt-spy-to="#section-intro"   data-pt-spy-offset="#sitenav"  href="#section-intro">intro</a></li>
+            <li><a data-pt-spy-to="#section-truck"   data-pt-spy-offset="#sitenav"  href="#section-truck">truck</a></li>
+            <li><a data-pt-spy-to="#section-brands"  data-pt-spy-offset="#sitenav"  href="#section-brands">brands</a></li>
             <li><a                                   href="other-page/">no spy</a></li>
         </ul>
     </div>
 
-
 */
+
 
     ,buildNavSpy: function() {
         
@@ -1052,6 +1049,14 @@ var PT = {
                     
 
 
+
+                    var ScrollToOffsetID = $(element).data('pt-spy-offset');
+                    var ScrollToOffsetNumber = $(ScrollToOffsetID).outerHeight(true);
+
+
+
+
+
                     if($(SpyZone).length){
 
                         var sm_scene = new ScrollMagic.Scene()
@@ -1061,7 +1066,7 @@ var PT = {
                                         // .trigger('hello')
                                         // DURATION IS THE HEIGHT OF THE ANCHORED ZONE
                                         .duration($(SpyZoneID).outerHeight())  
-            // .addIndicators({name:"pt-spy-to " +SpyZoneID, indent:100}) // add indicators (requires plugin)
+                                        // .addIndicators({name:"pt-spy-to " +SpyZoneID, indent:100}) // add indicators (requires plugin)
                                         .addTo(PT.SM_CTRL);
 
 
@@ -1084,10 +1089,14 @@ var PT = {
                         var smsTo = $(this.hash).data('pt-spy-me');
 
                         if (offSet !== undefined){
-                            TweenMax.to(window, 0.5, { scrollTo:{ y:smsTo }, ease:Power4.easeInOut } );                
+                            if( ScrollToOffsetNumber === null ){
+                                // console.log('null');
+                                TweenMax.to(window, 0.5, { scrollTo:{ y:smsTo }, ease:Power4.easeInOut } );                
+                            }else{
+                                // console.log('not null');
+                                TweenMax.to(window, 0.5, { scrollTo:{ y:smsTo-ScrollToOffsetNumber }, ease:Power4.easeInOut } );                
+                            }                            
                         }
-
-                        // PT._SITE_NAV.find(".navbar-collapse").collapse('hide');
 
                     });
 
@@ -1283,6 +1292,15 @@ var PT = {
                 }
             ]);
 */
+
+
+
+
+
+            $(window).resize( function(){
+                TweenMax.set(_sidrTOPBAR, {width:'100%'} );
+            });
+ 
 
         }
 
