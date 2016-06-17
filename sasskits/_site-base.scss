@@ -78,6 +78,14 @@ html {
     @include ptZoneColors( lightgrey, #ffffff, #000 );
 }
 
+.bg-black{
+    @include ptZoneColors( black, white, white );
+}
+
+.bg-white{
+    @include ptZoneColors( white, black, black );
+}
+
 
 
 

@@ -348,7 +348,12 @@ var PT = {
     // SIMPLE STICK / PIN  USING ScrollMagic  
     ,makeSticky: function(item){
         PT.log('makeSticky() ' + item);
-        // var locY  = item.offset().top;
+
+        var thisItem = $(item);
+        var thisData = thisItem.data('pt-sticky');
+        var thisOffset = thisData.offset;
+
+        // console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ " + thisData.offset );
 
         var scene1 = new ScrollMagic.Scene({
             triggerElement: item
@@ -358,21 +363,30 @@ var PT = {
         .addTo(PT.SM_CTRL);
         // .addIndicators();
 
+        if( thisData.offset != undefined){
+
+            if( $.isNumeric( thisOffset ) ){
+                scene1.offset( thisOffset );
+            }else{
+                scene1.offset( - $( thisOffset ).height() );
+            }
+        }
+
     }
 
 
 
-
-
-
-
+ 
+   
+ 
+ 
 
 
 
     ,runStickies:function(){
 
         $('[data-pt-sticky]').each(function(i, val){
-            PT.makeSticky( this );
+            PT.makeSticky( $(this) );
         });
 
     }
@@ -1133,11 +1147,12 @@ var PT = {
     ,buildSIDR: function(){
         PT.log('buildSIDR()');
 
-        var _sidrMAIN   =  $('#pt-sidr');
-        var _sidrSIDE  = "right";
-        var _sidrCOVER = $('.sidr-cover');
-        var _sidrCLOSE = $('#sidr-close-btn');
-        var _sidrBTN   = $('#sidr-menu-btn');
+        var _sidrMAIN       = $('#pt-sidr');
+        var _sidrSIDE       = "right";
+        var _sidrCOVER      = $('.sidr-cover');
+        var _sidrCLOSE      = $('#sidr-close-btn');
+        var _sidrBTN        = $('#sidr-menu-btn');
+        var _sidrTOPBAR     = $('#sidr-topbar');
 
         // var _sidrWIDTH = $('#sidr-main').width();
 
@@ -1146,21 +1161,19 @@ var PT = {
                 doNow
             )
         }else{
-            // PT.log('there is no SIDR to build.');
+            PT.log('there is no SIDR to build.');
         }
  
 
 
         function doNow(){
-            // console.log('doing now');
+            PT.log('building SIDR now');
 
             // ADD A COVER TO THE PAGE TO SHOW WHEN THE MENU IS OPEN:
             // $('body').prepend('<div class="sidr-cover"></div>');
 
-
             // SET THE COVER TINT TO INVISIBLE:
             TweenMax.set(_sidrCOVER, {autoAlpha:0});
-
 
 
             // TURNS THE NESTED <ul>'s INTO ACCORDION NAV:
@@ -1168,12 +1181,22 @@ var PT = {
      
 
 
-            PT.log( _sidrMAIN.data('sidr-side'), 'orange'  );
+ 
+            if(_sidrMAIN.attr('data-sidr-side')){
+                // PT.log(_sidrMAIN.data('sidr-side'), 'orange');
+                _sidrSIDE = _sidrMAIN.data('sidr-side');
+            }
 
-            if(_sidrMAIN.data('sidr-side') === 'left'){
-                _sidrSIDE = "left";
+            if(_sidrSIDE === 'left'){
+                // _sidrSIDE = "left";
+                $(_sidrBTN).addClass('left');
+                $(_sidrTOPBAR).addClass('right');
+
             }else{
-                _sidrSIDE = "right";
+                // _sidrSIDE = "right";
+                $(_sidrBTN).addClass('right');
+                $(_sidrTOPBAR).addClass('left');
+                
             }
 
 
@@ -1201,7 +1224,6 @@ var PT = {
             });
 
 
-
             // ON CLICK, CLOSE THE SIDR MENU:
             _sidrCOVER.on('click', function(e){
                 $.sidr('close', _sidrMAIN.attr('id'));
@@ -1216,7 +1238,6 @@ var PT = {
             // _sidrBTN.on('click', function(e){
             //     $.sidr('toggle', 'sidr-main');
             // });
-
 
 
 /*
@@ -1242,11 +1263,18 @@ var PT = {
 
 
         function sidr_onOpen(){
-            // console.log('onOpen');
             TweenMax.to(_sidrCOVER, 0.2, {autoAlpha:1});
-            // TweenMax.to(_sidrCLOSE, 0.2, {autoAlpha:1});
-            TweenMax.to(_sidrBTN, 0.1, {right:$('#pt-sidr').width(), ease:Power1.easeIn});
-            // TweenMax.to( $('#sidr-main'), 0.2, {right:0, ease:Power1.easeInOut});
+            // TweenMax.to(_sidrBTN, 0.1, {right:$('#pt-sidr').width(), ease:Power1.easeIn});
+
+            if(_sidrSIDE === "left"){
+                
+                TweenMax.to(_sidrBTN, 0.1, {left:$('#pt-sidr').width(), ease:Power1.easeIn});
+            
+            }else if(_sidrSIDE === "right"){
+            
+                TweenMax.to(_sidrBTN, 0.1, {right:$('#pt-sidr').width(), ease:Power1.easeIn});
+            
+            }
 
             _sidrBTN.html('<i class="fa fa-close"></i>');
 
@@ -1254,11 +1282,19 @@ var PT = {
 
 
         function sidr_onClose(){
-            // console.log('onClose');
             TweenMax.to(_sidrCOVER, 0.2, {autoAlpha:0});
-            // TweenMax.to(_sidrCLOSE, 0.2, {autoAlpha:0});
             TweenMax.to(_sidrBTN, 0.1, {right:0, ease:Power1.easeOut});
-            // TweenMax.to( $('#sidr-main'), 0.2, {right:-$('#sidr-main').width(), ease:Power1.easeInOut});
+
+
+            if(_sidrSIDE === "left"){
+                
+                TweenMax.to(_sidrBTN, 0.1, {left:0, ease:Power1.easeOut});
+            
+            }else if(_sidrSIDE === "right"){
+            
+                TweenMax.to(_sidrBTN, 0.1, {right:0, ease:Power1.easeOut});
+            
+            }
 
             _sidrBTN.html('<i class="fa fa-bars"></i>');
 
@@ -1284,9 +1320,44 @@ var PT = {
 
         }
         */
- 
- 
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1322,7 +1393,7 @@ var PT = {
 
         function doNow(){
 
-            PT.log('BUILDING TOPBAR NOW  ! !');
+            PT.log('BUILDING TOPBAR NOW ');
             // PT.log(_TopBar.offset().top, 'purple');
 
 

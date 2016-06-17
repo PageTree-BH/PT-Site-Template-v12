@@ -5,7 +5,7 @@ $sidr-font-size: 15px;
 
 
 // Colors
-$sidr-background: orange;
+$sidr-background: $pt-color-primary;
 
 $sidr-background-shadow-color: #222;
 $sidr-text-color: #fff;
@@ -36,7 +36,7 @@ $topbar-height: 100px;
 @media screen and ( min-height: 600px ){
 	
 	#sidr-topbar{
-		position:fixed;
+		// position:fixed;
 	}
 }
 
@@ -74,7 +74,7 @@ $topbar-height: 100px;
 
 
 	.logoholder{
-		width:200px;
+		// width:200px;
 		height:auto;
 		margin-right:2em;
 		margin-left:2em;
@@ -86,16 +86,25 @@ $topbar-height: 100px;
 		// display:none;
 
 		.sidr-closed & {
-			display:block;
+			// display:block;
 		}
 
 		.sidr-open & {
-			display:none;
+			// display:none;
 		}
 		
+		// .left & {
+		// 	border:1px solid green;
+		// }
+
+		// .right & {
+		// 	border:1px solid yellow;
+		// }
+ 
+
 		@include ptBreakpoint($sm){
 		// 	display:block;
-			margin-right:5em;
+			// margin-right:5em;
 		
 			.sidr-closed &,
 			.sidr-open & {
@@ -104,6 +113,12 @@ $topbar-height: 100px;
 
 		}
 		
+		img{
+			position:relative;
+			display: block;
+			width:100%;
+			height:auto;
+		}
 
 	}
 
@@ -117,7 +132,6 @@ $topbar-height: 100px;
 			}
 		}
 	}
-
 
 }
 
