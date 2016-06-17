@@ -3423,7 +3423,7 @@
 	"\/sasskits\/ab-sections.kit": {
 		"fileType": 2048,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sasskits\/ab-sections.kit",
 		"outputAbbreviatedPath": "\/sasskits\/ab-sections.html",
 		"outputPathIsOutsideProject": 0,
@@ -3463,7 +3463,7 @@
 		},
 	"\/sasskits\/Navigation-Sidr.kit": {
 		"fileType": 2048,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sasskits\/Navigation-Sidr.kit",
 		"outputAbbreviatedPath": "\/sasskits\/Navigation-Sidr.html",
@@ -3651,15 +3651,6 @@
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 1,
 		"useLibsass": 0
-		},
-	"\/sections.kit": {
-		"fileType": 2048,
-		"ignore": 1,
-		"ignoreWasSetByUser": 1,
-		"inputAbbreviatedPath": "\/sections.kit",
-		"outputAbbreviatedPath": "\/sections.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		},
 	"\/SITE-VARS.scss": {
 		"createSourceMap": 0,

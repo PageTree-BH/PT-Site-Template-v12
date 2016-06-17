@@ -341,9 +341,14 @@ var PT = {
 
 
 
-
-
-
+/*
+    <section data-pt-sticky>
+    <section data-pt-sticky='{"offset":"#pt-topbar"}' >
+    <section data-pt-sticky='{"offset":"-100"}' >
+    <section data-pt-sticky='{"offset":"#pt-topbar", "offset2":"-50" }' >
+    <section data-pt-sticky='{"offset":"#pt-topbar", "offset2":".pt-quick-contact", "duration":"150"}' >
+    <section data-pt-sticky='{"offset":"#pt-topbar", "offset2":".pt-quick-contact", "duration":".other-class"}' >
+*/
 
     // SIMPLE STICK / PIN  USING ScrollMagic  
     ,makeSticky: function(item){
@@ -351,7 +356,7 @@ var PT = {
 
         var thisItem = $(item);
         var thisData = thisItem.data('pt-sticky');
-        var thisOffset = thisData.offset;
+        // var thisOffset = thisData.offset;
 
         // console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ " + thisData.offset );
 
@@ -363,23 +368,48 @@ var PT = {
         .addTo(PT.SM_CTRL);
         // .addIndicators();
 
-        if( thisData.offset != undefined){
 
-            if( $.isNumeric( thisOffset ) ){
-                scene1.offset( thisOffset );
+        // console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ " + thisData.offset );
+
+
+
+
+        if( thisData.offset != undefined){
+            if( $.isNumeric( thisData.offset ) ){
+                scene1.offset( thisData.offset );
             }else{
-                scene1.offset( - $( thisOffset ).height() );
+                scene1.offset( - $( thisData.offset ).height() );
             }
         }
 
+
+        if( thisData.offset2 != undefined){
+            if( $.isNumeric( thisData.offset2 ) ){
+                scene1.offset( parseInt(scene1.offset() ) + parseInt(thisData.offset2) );
+            }else{
+                scene1.offset( parseInt( scene1.offset() ) + (- parseInt( $( thisData.offset2 ).height()) ) );
+            }
+        }
+
+
+        if( thisData.duration != undefined){
+            if( $.isNumeric( thisData.duration ) ){
+                scene1.duration( thisData.duration );
+            }else{
+                scene1.duration( $( thisData.duration ).height()  );
+            }
+
+            // PT.log($( thisData.duration ).height(), 'blue');    
+            // PT.log(scene1.duration(), 'blue');    
+        
+        }
+
+        
     }
 
 
 
- 
-   
- 
- 
+
 
 
 
@@ -392,10 +422,7 @@ var PT = {
     }
 
 
-
-
-
-
+ 
 
 
 
