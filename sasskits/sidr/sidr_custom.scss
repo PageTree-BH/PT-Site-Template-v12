@@ -265,6 +265,9 @@ body{
 
 
 
+
+
+
 #pt-sidr{
 
 	background-color:$sidr-background;
@@ -343,8 +346,6 @@ body{
 
 
 
-
-
 .sidr-cover{
 
 	position:fixed; top:0; left:0; bottom:0; right:0;
@@ -380,6 +381,9 @@ body{
 
 
 
+
+
+
 .caret{
 	transform:rotate(-90deg);
 	transition:0.2s;
@@ -387,6 +391,9 @@ body{
 		transform:rotate(0);
 	}
 }
+
+
+
 
 
 

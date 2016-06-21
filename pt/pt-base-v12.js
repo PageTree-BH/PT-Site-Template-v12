@@ -1,39 +1,34 @@
+
 // Custom JS Application Code
 
 // If using JSLint for syntax debugging, include the following
 
-
 /*
-global 
-PT:true, 
-SITE:true, 
-TimelineMax:true, 
-TweenMax:true, 
-TweenLite:true, 
-SplitText:true, 
-Linear:true, 
-Elastic:true, 
-Power1:true, 
-Power2:true, 
-Power3:true, 
-Power4:true, 
-Bounce:true, 
-ScrollMagic:true, 
-FastClick:true, 
-enquire:true, 
-Justice:true, 
-ScrollMagic:true, 
-Modernizr:true,
-PT_UTILS:true, 
-jQuery:true,
-ssm:true
+    global 
+    PT:true, 
+    SITE:true, 
+    TimelineMax:true, 
+    TweenMax:true, 
+    TweenLite:true, 
+    SplitText:true, 
+    Linear:true, 
+    Elastic:true, 
+    Power1:true, 
+    Power2:true, 
+    Power3:true, 
+    Power4:true, 
+    Bounce:true, 
+    ScrollMagic:true, 
+    FastClick:true, 
+    enquire:true, 
+    Justice:true, 
+    ScrollMagic:true, 
+    Modernizr:true,
+    PT_UTILS:true, 
+    jQuery:true,
+    ssm:true
 */
     
-
- 
- 
-
-
 
     
 // @codekit-prepend "pt-base-lib-bundle-v9.js"  
@@ -52,6 +47,20 @@ $(function() {
 
 
 
+/*
+
+    ########  ########    
+    ##     ##    ##       
+    ##     ##    ##       
+    ########     ##       
+    ##           ##       
+    ##           ##       
+    ##           ##       
+
+    ==========================================
+    ==========================================
+
+ */
 
 var PT = { 
 
@@ -64,25 +73,27 @@ var PT = {
 
     ,_isDevMode : true
 
+
     // SIMPLE STATE MANAGER.js  
     ,_SSM: ssm
 
-    ,_Size:'xs' // xs,sm,md,lg,xl
+
+    // xs,sm,md,lg,xl
+    ,_Size:'xs' 
 
 
     // THIS IS THE GLOBAL SCROLLMAGIC CONTROLLER FOR ALL SCROLLING INTERACTION IN THIS FILE:
     ,SM_CTRL: new ScrollMagic.Controller()
 
 
-	,init: function() {
-		// Application has been initalized
-		PT.log(this._SETTINGS.name + "(v" + this._SETTINGS.version + ") Started");	
 
+	,init: function() {
+
+		PT.log(this._SETTINGS.name + "(v" + this._SETTINGS.version + ") Started");	
 
         // ADDS BREAKPOINT SIZE INDICATOR :
         $('body').prepend('<div class="pt-sizer"></div>');
         
-
         // PT.monitorFPS();
 
         PT.checkPreloader();
@@ -102,7 +113,7 @@ var PT = {
         PT.buildSIDR();
 
         PT.buildTopBar();
- 
+        
     }
 
 
@@ -111,6 +122,29 @@ var PT = {
 
 
 
+
+
+
+
+
+
+
+
+
+/*
+
+    ##        #######   ######   
+    ##       ##     ## ##    ##  
+    ##       ##     ## ##        
+    ##       ##     ## ##   #### 
+    ##       ##     ## ##    ##  
+    ##       ##     ## ##    ##  
+    ########  #######   ###### 
+
+    =========================================
+    =========================================
+
+ */
 
     ,log: function(_data_, _color_){
         
@@ -151,13 +185,30 @@ var PT = {
 
 
 
-// CLEAN THESE UP: 
 
 
 
 
 
+
+
+
+
+/*
+
+     #######  ##    ##    ##        #######     ###    ########     
+    ##     ## ###   ##    ##       ##     ##   ## ##   ##     ##    
+    ##     ## ####  ##    ##       ##     ##  ##   ##  ##     ##    
+    ##     ## ## ## ##    ##       ##     ## ##     ## ##     ##    
+    ##     ## ##  ####    ##       ##     ## ######### ##     ##    
+    ##     ## ##   ###    ##       ##     ## ##     ## ##     ##    
+     #######  ##    ##    ########  #######  ##     ## ########     
+
+    ============================================================
+    ============================================================
+                                  
     // THIS IS A WAY TO ADD MULTIPLE window.onload FUNCTIONS PER PAGE.
+ */
     
     ,onLoadFuncs:[]
 
@@ -195,6 +246,26 @@ var PT = {
 
 
 
+
+
+
+
+
+/*
+
+    ########  ########  ######## ##        #######     ###    ########  ######## ########  
+    ##     ## ##     ## ##       ##       ##     ##   ## ##   ##     ## ##       ##     ## 
+    ##     ## ##     ## ##       ##       ##     ##  ##   ##  ##     ## ##       ##     ## 
+    ########  ########  ######   ##       ##     ## ##     ## ##     ## ######   ########  
+    ##        ##   ##   ##       ##       ##     ## ######### ##     ## ##       ##   ##   
+    ##        ##    ##  ##       ##       ##     ## ##     ## ##     ## ##       ##    ##  
+    ##        ##     ## ######## ########  #######  ##     ## ########  ######## ##     ## 
+
+    ======================================================================================
+    ======================================================================================
+                                                            
+ */
+
     ,checkPreloader:function(){
         // PT.log('PT.checkPreloader()', 'orange');
         
@@ -213,13 +284,9 @@ var PT = {
         }
 
         function fadePreloader(){
-            //console.log('fadePreloader()');
-
-            // TweenMax.to(_pl, 0.3, {autoAlpha:0});
             TweenMax.to(_pl, 0.3, {autoAlpha:0, onComplete:function(){
                 _pl.css({'display':'none'});
             }});
-
         }
 
     } 
@@ -242,14 +309,33 @@ var PT = {
 
 
 
+
+
+
+/*
+
+    ########  ##     ## #### ##       ########         ######   ######  ##     ## 
+    ##     ## ##     ##  ##  ##       ##     ##       ##    ## ##    ## ###   ### 
+    ##     ## ##     ##  ##  ##       ##     ##       ##       ##       #### #### 
+    ########  ##     ##  ##  ##       ##     ##        ######   ######  ## ### ## 
+    ##     ## ##     ##  ##  ##       ##     ##             ##       ## ##     ## 
+    ##     ## ##     ##  ##  ##       ##     ##       ##    ## ##    ## ##     ## 
+    ########   #######  #### ######## ########         ######   ######  ##     ## 
+
+    =============================================================================
+    =============================================================================
+
+    BUILD SIMPLE STATE MANAGER
+
+ */
+
     ,buildSSM: function() {
-        // MANAGES MEDIA-QUERIES BREAKPOINTS:
         PT._SSM.addStates([
             {
                 id: 'xs',
                 query: '(min-width: 300px) and (max-width: 768px)',
                 onEnter: function(){
-                    // console.log('xs');
+                    PT.log('xs', 'green');
                     PT._Size = 'xs';
                     PT.runImgSwapUploadCareResponsive();
                 }
@@ -258,7 +344,7 @@ var PT = {
                 id: 'sm',
                 query: '(min-width: 768px) and (max-width: 992px)',
                 onEnter: function(){
-                    // console.log('sm');
+                    PT.log('sm', 'green');
                     PT._Size = 'sm';
                     PT.runImgSwapUploadCareResponsive();
                 }
@@ -267,7 +353,7 @@ var PT = {
                 id: 'md',
                 query: '(min-width: 992px) and (max-width: 1200px)',
                 onEnter: function(){
-                    // console.log('md');
+                    PT.log('md', 'green');
                     PT._Size = 'md';
                     PT.runImgSwapUploadCareResponsive();
                 }
@@ -276,7 +362,7 @@ var PT = {
                 id: 'lg',
                 query: '(min-width: 1200px) and (max-width: 1500px)',
                 onEnter: function(){
-                    // console.log('lg');
+                    PT.log('lg', 'green');
                     PT._Size = 'lg';
                     PT.runImgSwapUploadCareResponsive();
                 }
@@ -285,30 +371,12 @@ var PT = {
                 id: 'xl',
                 query: '(min-width: 1500px)',
                 onEnter: function(){
-                    // console.log('lg');
+                    PT.log('lg', 'green');
                     PT._Size = 'xl';
                     PT.runImgSwapUploadCareResponsive();
                 }
             }
         ]);
-
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-    ,getSize: function(){
-
-        return PT._Size;
-
     }
 
 
@@ -326,13 +394,6 @@ var PT = {
 
 
 
-
-    ,addRandomClass: function(_obj, _arr) {
-        PT.log('addRandomClass()');
-        var arr = _arr;
-        var obj = $(_obj);
-        obj.addClass( arr[ Math.floor(Math.random() * arr.length)  ]  );
-    }
 
 
 
@@ -342,15 +403,36 @@ var PT = {
 
 
 /*
+
+    ##     ##    ###    ##    ## ########        ######  ######## ####  ######  ##    ## ##    ## 
+    ###   ###   ## ##   ##   ##  ##             ##    ##    ##     ##  ##    ## ##   ##   ##  ##  
+    #### ####  ##   ##  ##  ##   ##             ##          ##     ##  ##       ##  ##     ####   
+    ## ### ## ##     ## #####    ######          ######     ##     ##  ##       #####       ##    
+    ##     ## ######### ##  ##   ##                   ##    ##     ##  ##       ##  ##      ##    
+    ##     ## ##     ## ##   ##  ##             ##    ##    ##     ##  ##    ## ##   ##     ##    
+    ##     ## ##     ## ##    ## ########        ######     ##    ####  ######  ##    ##    ##     
+
+    =============================================================================================
+    =============================================================================================
+
     <section data-pt-sticky>
     <section data-pt-sticky='{"offset":"#pt-topbar"}' >
     <section data-pt-sticky='{"offset":"-100"}' >
     <section data-pt-sticky='{"offset":"#pt-topbar", "offset2":"-50" }' >
     <section data-pt-sticky='{"offset":"#pt-topbar", "offset2":".pt-quick-contact", "duration":"150"}' >
     <section data-pt-sticky='{"offset":"#pt-topbar", "offset2":".pt-quick-contact", "duration":".other-class"}' >
+
 */
 
-    // SIMPLE STICK / PIN  USING ScrollMagic  
+    ,runStickies:function(){
+
+        $('[data-pt-sticky]').each(function(i, val){
+            PT.makeSticky( $(this) );
+        });
+
+    }
+
+
     ,makeSticky: function(item){
         PT.log('makeSticky() ' + item);
 
@@ -358,19 +440,12 @@ var PT = {
         var thisData = thisItem.data('pt-sticky');
         // var thisOffset = thisData.offset;
 
-        // console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ " + thisData.offset );
-
         var scene1 = new ScrollMagic.Scene({
             triggerElement: item
             ,triggerHook: 'onLeave'
         })
         .setPin(item, {pushFollowers: false})
         .addTo(PT.SM_CTRL);
-        // .addIndicators();
-
-
-        // console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ " + thisData.offset );
-
 
 
 
@@ -382,7 +457,6 @@ var PT = {
             }
         }
 
-
         if( thisData.offset2 != undefined){
             if( $.isNumeric( thisData.offset2 ) ){
                 scene1.offset( parseInt(scene1.offset() ) + parseInt(thisData.offset2) );
@@ -391,76 +465,23 @@ var PT = {
             }
         }
 
-
         if( thisData.duration != undefined){
             if( $.isNumeric( thisData.duration ) ){
                 scene1.duration( thisData.duration );
             }else{
                 scene1.duration( $( thisData.duration ).height()  );
             }
-
-            // PT.log($( thisData.duration ).height(), 'blue');    
-            // PT.log(scene1.duration(), 'blue');    
-        
         }
 
-        
-    }
 
+        if(PT._isDevMode){
+            // .addIndicators({name:"pt-spy-to " +SpyZoneID, indent:100})      
+            scene1.addIndicators({name:"PT.makeSticky " + thisItem });
+        }
 
-
-
-
-
-
-    ,runStickies:function(){
-
-        $('[data-pt-sticky]').each(function(i, val){
-            PT.makeSticky( $(this) );
-        });
 
     }
 
-
- 
-
-
-
-    // COPIES IMG SRC INTO CSS BACKGROUND-IMAGE.
-    ,imgSwap: function(_img, _div) {
-        //console.log('PT.imgSwap()');
-        var IMG = _img;
-        var DIV = _div;
-        var IMGurl = IMG.attr('src');
-
-        // IMG.css('visibility', 'hidden');
-        IMG.css('display', 'none');
-
-        DIV.css('background-image', 'url("'+IMGurl+'")' )
-            .css('background-size', 'cover')
-            .css('background-position','center');
-    }
-
-
-
-
-
-
-
-
-    // RUNS PT.imgSwap ON A PRESET BUNCH OF CLASSSES;
-    ,runImgSwaps: function() {
-        // //console.log('PT.runImgSwaps()')
-
-        $('[data-pt-imgswap]').each(function(i, val){
-
-            // check the data attribute value and pass it along to the imgSwap function.
-            // var _bgStyle = ;// 'cover' / 'contain' / 
-
-            PT.imgSwap( $(val).find('img:first'), $(val) );
-        });
-
-    }
 
 
 
@@ -489,505 +510,18 @@ var PT = {
 
 /*
 
-//<div class="testy" data-pt-imgswap-ucr=''>
-//<div class="testy" data-pt-imgswap-ucr='{"md":"-/resize/1000x/-/blur/30/", "lg":"-/resize/1200x/", "xl":"-/resize/2000x/"}'>
-<div class="testy" data-pt-imgswap-ucr='{"xs":"-/resize/400x/", "sm":"-/resize/600x/", "md":"-/resize/1000x/", "lg":"-/resize/1200x/", "xl":"-/resize/1800x/"}'>
-    <img src="https://ucarecdn.com/32badcc5-bd4f-4473-9c17-385a3bd2ecd5/" alt="">
-</div>
+    ##    ##    ###    ##     ##        ######  ########  ##    ## 
+    ###   ##   ## ##   ##     ##       ##    ## ##     ##  ##  ##  
+    ####  ##  ##   ##  ##     ##       ##       ##     ##   ####   
+    ## ## ## ##     ## ##     ##        ######  ########     ##    
+    ##  #### #########  ##   ##              ## ##           ##    
+    ##   ### ##     ##   ## ##         ##    ## ##           ##    
+    ##    ## ##     ##    ###           ######  ##           ##    
 
+    ==============================================================
+    ==============================================================
 
-//IN THE CMS:
-<div class="testy" data-pt-imgswap-ucr >
-   <div class="image-editor"></div>
-</div>
 
-
-*/
-   
-
-
-
-    // COPIES IMG SRC INTO CSS BACKGROUND-IMAGE.
-    ,imgSwapUploadCareResponsive: function(_img, _div) {
-        
-        PT.log('PT.imgSwapResponsive()');
-        PT.log(PT._Size);
-        
-
-        var IMG = _img;
-        var DIV = _div;
-        // var IMGurl = IMG.attr('srcset');
-        var IMGurl = IMG.attr('src');
-
-        // IMG.css('visibility', 'hidden');
-        IMG.css('display', 'none');
-
-
-        if(PT._Size === 'xs'){
-            if(DIV.data('pt-imgswap-ucr').xs !== undefined){
-                IMGurl += (DIV.data('pt-imgswap-ucr').xs);                
-            }else{
-                IMGurl += ("-/resize/400x/-/effect/grayscale/");
-            }
-        }
-        if(PT._Size === 'sm'){
-            if(DIV.data('pt-imgswap-ucr').sm !== undefined){
-                IMGurl += (DIV.data('pt-imgswap-ucr').sm);                
-            }else{
-                IMGurl += ("-/resize/800x/-/effect/grayscale/");
-            }
-        }
-        if(PT._Size === 'md'){
-            if(DIV.data('pt-imgswap-ucr').md !== undefined){
-                IMGurl += (DIV.data('pt-imgswap-ucr').md);                
-            }else{
-                IMGurl += ("-/resize/1000x/-/effect/grayscale/");
-            }
-        }
-        if(PT._Size === 'lg'){
-            if(DIV.data('pt-imgswap-ucr').lg !== undefined){
-                IMGurl += (DIV.data('pt-imgswap-ucr').lg);                
-            }else{
-                IMGurl += ("-/resize/1400x/-/effect/grayscale/");
-            }
-        }
-        if(PT._Size === 'xl'){
-            if(DIV.data('pt-imgswap-ucr').xl !== undefined){
-                IMGurl += (DIV.data('pt-imgswap-ucr').xl);                
-            }else{
-                IMGurl += ("-/resize/1800x/-/effect/grayscale/");
-            }
-        }
-
-        if(DIV.data('pt-imgswap-ucr') === '' || DIV.data('pt-imgswap-ucr') === ' ' || DIV.data('pt-imgswap-ucr') === 'default' || DIV.data('pt-imgswap-ucr') === undefined){
-            // PT.log('?~? zilcho');
-        }else{
-            // PT.log('?~? ' + DIV.data('pt-imgswap-ucr'));        
-        }
-
-
-        // PT.log('???? ' + $(DIV.data('pt-imgswap-ucr')).length);     
-
-        PT.log(IMGurl);
-
-        DIV.css('background-image', 'url("'+IMGurl+'")' )
-            .css('background-size', 'cover')
-            .css('background-position','center');
-    }
-
-
-
-
-
-
-    // RUNS PT.imgSwap ON A PRESET BUNCH OF CLASSSES;
-    ,runImgSwapUploadCareResponsive: function() {
-        // PT.log('PT.runImgSwapUploadCareResponsive()');
-
-        $('[data-pt-imgswap-ucr]').each(function(i, val){
-
-            // check the data attribute value and pass it along to the imgSwap function.
-            // var _bgStyle = ;// 'cover' / 'contain' / 
-
-            PT.imgSwapUploadCareResponsive( $(val).find('img:first'), $(val) );
-
-
-
-            // console.log($(val).data('pt-imgswap-ucr').xs);
-
-        });
-
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //  ADDS A FPS (FramePerSecond) MONITOR TO THE PAGE:
-    ,monitorFPS:function(){
-
-        PT.addOnLoad(
-            doNow
-        );
-
-        function doNow(){
-            Justice.init(); 
-        }
-    }
-
-
-
-
-
-    ,fastClick:function(){
-        FastClick.attach(document.body);
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// USE:
-// <div data-pt-transition="slide-from-left">
-// <div data-pt-transition="slide-from-right">
-// <div data-pt-transition="slide-from-top">
-// <div data-pt-transition="slide-from-bottom">
-// <div data-pt-transition="fade-in">
-
-    ,buildTransitions: function(_DURATION) {
-        
-        PT.log('PT.buildTransitions()', 'green');
-
-        // if (PT._BreakPoint === 'medium') {
-        if ( (PT._BreakPoint === 'md') || (PT._BreakPoint === 'lg') || (PT._BreakPoint === 'lg') ) {
-        
-            PT.addOnLoad(
-               doNow
-            );
-        
-        }
-
-        // WE MUST WAIT UNTIL THE CONTENT IS DONE LOADING BEFORE 
-        // CALCULATING THE HEIGHTS OF THE SCROLL SPY SECTIONS:
-        function doNow(){
-
-            var _D_ = typeof _DURATION !== 'undefined' ? _DURATION : false;
-
-            // _D_ = false;//FORCE FOR TESTING PURPOSES
-            
-            var H = $(window).height();
-
-
-            var SLIDE_FromRight = [];
-            var SLIDE_FromLeft = [];
-            var SLIDE_FromBottom = [];
-            var SLIDE_FromTop = [];
-            var FADE_In = [];
-
-
-
-            // CHECK THE PAGE FOR ELEMENTS AND LOAD THEM IN THE ARRAYS FOR BUILD:
-
-            $('[data-pt-transition]').each(function(i, val){
-                var transitionType = $(this).data('pt-transition');
-                // //console.log( transitionType );
-
-                switch(transitionType) {
-                    
-                    case "slide-from-right":
-                        SLIDE_FromRight.push(this);
-                        break;
-                    
-                    case "slide-from-left":
-                        SLIDE_FromLeft.push(this);
-                        break;
-                                    
-                    case "slide-from-top":
-                        SLIDE_FromTop.push(this);
-                        break;
-                                    
-                    case "slide-from-bottom":
-                        SLIDE_FromBottom.push(this);
-                        break;
-                                                    
-                    case "fade-in":
-                        FADE_In.push(this);
-                        break;
-                    
-                    default:
-                        // default
-                        break;
-
-                }
-
-            });
-     
-
-
-
-            //  .slide-fromLeft
-            for (var i2=0; i2 < SLIDE_FromLeft.length; i2++){
-
-                $(SLIDE_FromLeft[i2]).parent().css({'overflow-x':'hidden'});
-
-                var tweenFromLeft = new TweenMax.from(SLIDE_FromLeft[i2], 1, {alpha:0, x:'-=50', ease:Power1.easeOut} );
-                  
-                var scene_fromLeft = new ScrollMagic.Scene({
-                // var SM_Scene = new ScrollMagic.Scene({
-                    triggerElement: SLIDE_FromLeft[i2]
-                    ,triggerHook:0.9
-                })
-                // .addTo(SM_CTRL_Extras)
-                .addTo(PT.SM_CTRL)
-                .reverse(false)
-                // .addIndicators()
-                .setTween(tweenFromLeft);
-
-                if(_D_){
-                    scene_fromLeft.reverse(true);
-                    scene_fromLeft.duration(H/2);
-                }else{
-                    // MAYBE THIS SHOULD BE DESTROYED AFTER IT RUNS
-                    // scene_fromLeft.on('end', function(e){scene_fromLeft.destroy()} );
-                }
-
-            }
-
-
-
-
-            //  .slide-fromRight
-            for (var i1=0; i1 < SLIDE_FromRight.length; i1++){
-
-                $(SLIDE_FromRight[i1]).parent().css({'overflow-x':'hidden'});
-
-                var tweenFromRight = new TweenMax.from(SLIDE_FromRight[i1], 1, {alpha:0, x:'+=50', ease:Power1.easeOut} );
-                  
-                var scene_fromRight = new ScrollMagic.Scene({
-                // var SM_Scene = new ScrollMagic.Scene({
-                    triggerElement: SLIDE_FromRight[i1]
-                    ,triggerHook:0.9
-                })
-                // .addTo(SM_CTRL_Extras)
-                .addTo(PT.SM_CTRL)
-                .reverse(false)
-                // .addIndicators()
-                .setTween(tweenFromRight); 
-                
-                if(_D_){
-                    scene_fromRight.reverse(true);
-                    scene_fromRight.duration(H/2);
-                }
-
-            }
-
-
-
-            //  .slide-fromBottom
-            for (var i3=0; i3 < SLIDE_FromBottom.length; i3++){
-
-                $(SLIDE_FromBottom[i3]).parent().css({'overflow-y':'hidden'});
-
-                var tweenFromBottom = new TweenMax.from(SLIDE_FromBottom[i3], 1, {alpha:0, y:'+=50', ease:Power1.easeOut} );
-                  
-                var scene_fromBottom = new ScrollMagic.Scene({
-                    triggerElement: SLIDE_FromBottom[i3]
-                    ,triggerHook:0.9
-                })
-                // .addTo(SM_CTRL_Extras)
-                .addTo(PT.SM_CTRL)
-                .reverse(false)
-                // .addIndicators()
-                .setTween(tweenFromBottom); 
-                
-                if(_D_){
-                    scene_fromBottom.reverse(true);
-                    scene_fromBottom.duration(H/2);
-                }
-
-            }
-
-
-
-
-            //  .slide-fromTop
-            for (var i4=0; i4 < SLIDE_FromTop.length; i4++){
-
-                $(SLIDE_FromTop[i4]).parent().css({'overflow-y':'hidden'});
-
-                var tweenFromTop = new TweenMax.from(SLIDE_FromTop[i4], 1, {alpha:0, y:'-=50', ease:Power1.easeOut} );
-                  
-                var scene_fromTop = new ScrollMagic.Scene({
-                    triggerElement: SLIDE_FromTop[i4]
-                    ,triggerHook:0.9
-                })
-                // .addTo(SM_CTRL_Extras)
-                .addTo(PT.SM_CTRL)
-                .reverse(false)
-                // .addIndicators()
-                .setTween(tweenFromTop); 
-                
-                if(_D_){
-                    scene_fromTop.reverse(true);
-                    scene_fromTop.duration(H/2);
-                }
-
-            }
-
-
-
-
-            //  .fade-in 
-            for (var i5=0; i5 < FADE_In.length; i5++){
-
-                var tweenFadeIn = new TweenMax.from(FADE_In[i5], 1, {alpha:0, ease:Power1.easeIn} );
-                // var tweenFadeIn = new TweenMax.from(FADE_In[i5], 1, {alpha:0, ease.Linear.easeNone} );
-                
-                var scene_f = new ScrollMagic.Scene({
-                    triggerElement: FADE_In[i5]
-                    ,triggerHook:0.9
-                })
-                // .addTo(SM_CTRL_Extras)
-                .addTo(PT.SM_CTRL)
-                .reverse(true)
-                // .addIndicators()
-                .setTween(tweenFadeIn); 
-                 
-                if(_D_){
-                    scene_f.reverse(true);
-                    scene_f.duration(H/2);
-                }
-
-            }
-
-
-
-
-            // THIS MIGHT BE BETTER FOR LOOPING THROUGH THE ITEMS
-            // $(SLIDE_FromRight).each(function(i, _thing_){
-                
-            //     $(_thing_).closest('.row').css({'overflow-x':'hidden'});
-                
-            //     var tweenFromRight = new TweenMax.from(_thing_, 1, {alpha:0, x:'+=50', ease:Power1.easeOut} );
-
-            //     var scene_fromRight = new ScrollMagic.Scene({
-            //         triggerElement: _thing_
-            //         ,triggerHook:0.99
-            //     })
-            //     .addTo(PT.SM_CTRL)
-            //     .setTween(tweenFromRight); 
-
-            //     if(_D_){
-            //         scene_fromRight.reverse(true);
-            //         scene_fromRight.duration(H/2);
-            //     }
-
-            // });
-
-
-
-
-
-
-
-        }
-
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
     li{
         &.active{
             a{
@@ -1044,17 +578,11 @@ var PT = {
 
                     var SpyZone = $(SpyZoneID);
                     
-                    // var SpyNavItem = $(element);
                     var SpyNavItem = $(element).parent();
                     
 
-
-
                     var ScrollToOffsetID = $(element).data('pt-spy-offset');
                     var ScrollToOffsetNumber = $(ScrollToOffsetID).outerHeight(true);
-
-
-
 
 
                     if($(SpyZone).length){
@@ -1095,7 +623,8 @@ var PT = {
                             }else{
                                 // console.log('not null');
                                 TweenMax.to(window, 0.5, { scrollTo:{ y:smsTo-ScrollToOffsetNumber }, ease:Power4.easeInOut } );                
-                            }                            
+                            }
+
                         }
 
                     });
@@ -1126,26 +655,572 @@ var PT = {
 
 
 
- 
 
 
- 
+
+
+
+
+
 
 
 
 
 /*
 
-    <a id="sidr-menu-btn" href="#sidr-main"><i class="fa fa-bars"></i></a>
+    #### ##     ##    ###     ######   ########    
+     ##  ###   ###   ## ##   ##    ##  ##          
+     ##  #### ####  ##   ##  ##        ##          
+     ##  ## ### ## ##     ## ##   #### ######      
+     ##  ##     ## ######### ##    ##  ##          
+     ##  ##     ## ##     ## ##    ##  ##          
+    #### ##     ## ##     ##  ######   ########   
 
-    <div id="site-topbar">
 
-        <div class="logoholder"><img class="img-responsive" src="assets/img/logo-bci-white.png" alt=""></div>
+     ######  ##      ##    ###    ########         
+    ##    ## ##  ##  ##   ## ##   ##     ##        
+    ##       ##  ##  ##  ##   ##  ##     ##        
+     ######  ##  ##  ## ##     ## ########         
+          ## ##  ##  ## ######### ##               
+    ##    ## ##  ##  ## ##     ## ##               
+     ######   ###  ###  ##     ## ##               
 
+    ======================================================
+    ======================================================
+
+    COPIES IMG SRC INTO CSS BACKGROUND-IMAGE
+
+ */
+
+    ,imgSwap: function(_img, _div) {
+        // PT.log('PT.imgSwap()');
+        var IMG = _img;
+        var DIV = _div;
+        var IMGurl = IMG.attr('src');
+
+        IMG.css('display', 'none');
+
+        DIV.css('background-image', 'url("'+IMGurl+'")' )
+            .css('background-size', 'cover')
+            .css('background-position','center');
+
+    }
+
+
+
+    // RUNS PT.imgSwap ON A PRESET BUNCH OF CLASSSES;
+    ,runImgSwaps: function() {
+        // //console.log('PT.runImgSwaps()')
+
+        $('[data-pt-imgswap]').each(function(i, val){
+
+            // check the data attribute value and pass it along to the imgSwap function.
+            // var _bgStyle = ;// 'cover' / 'contain' / 
+
+            PT.imgSwap( $(val).find('img:first'), $(val) );
+        });
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+    ##     ## ########  ##        #######     ###    ########         ######     ###    ########  ########    
+    ##     ## ##     ## ##       ##     ##   ## ##   ##     ##       ##    ##   ## ##   ##     ## ##          
+    ##     ## ##     ## ##       ##     ##  ##   ##  ##     ##       ##        ##   ##  ##     ## ##          
+    ##     ## ########  ##       ##     ## ##     ## ##     ##       ##       ##     ## ########  ######      
+    ##     ## ##        ##       ##     ## ######### ##     ##       ##       ######### ##   ##   ##          
+    ##     ## ##        ##       ##     ## ##     ## ##     ##       ##    ## ##     ## ##    ##  ##          
+     #######  ##        ########  #######  ##     ## ########         ######  ##     ## ##     ## ########    
+                                                                                                                                                                                       
+                                                                                                              
+    #### ##     ##    ###     ######   ########           ######  ##      ##    ###    ########               
+     ##  ###   ###   ## ##   ##    ##  ##                ##    ## ##  ##  ##   ## ##   ##     ##              
+     ##  #### ####  ##   ##  ##        ##                ##       ##  ##  ##  ##   ##  ##     ##              
+     ##  ## ### ## ##     ## ##   #### ######             ######  ##  ##  ## ##     ## ########               
+     ##  ##     ## ######### ##    ##  ##                      ## ##  ##  ## ######### ##                     
+     ##  ##     ## ##     ## ##    ##  ##                ##    ## ##  ##  ## ##     ## ##                     
+    #### ##     ## ##     ##  ######   ########           ######   ###  ###  ##     ## ##    
+
+    ======================================================================================================
+    ======================================================================================================
+
+
+    //<div class="testy" data-pt-imgswap-ucr=''>
+    //<div class="testy" data-pt-imgswap-ucr='{"md":"-/resize/1000x/-/blur/30/", "lg":"-/resize/1200x/", "xl":"-/resize/2000x/"}'>
+    
+    <div class="testy" data-pt-imgswap-ucr='{"xs":"-/resize/400x/", "sm":"-/resize/600x/", "md":"-/resize/1000x/", "lg":"-/resize/1200x/", "xl":"-/resize/1800x/"}'>
+        <img src="https://ucarecdn.com/32badcc5-bd4f-4473-9c17-385a3bd2ecd5/" alt="">
     </div>
 
 
+    //IN THE CMS:
+    <div class="testy" data-pt-imgswap-ucr >
+       <div class="image-editor"></div>
+    </div>
+
+*/
+
+
+    // RUNS PT.imgSwap ON A PRESET BUNCH OF CLASSSES;
+    ,runImgSwapUploadCareResponsive: function() {
+        PT.log('PT.runImgSwapUploadCareResponsive()');
+
+        $('[data-pt-imgswap-ucr]').each(function(i, val){
+
+            // check the data attribute value and pass it along to the imgSwap function.
+            // var _bgStyle = ;// 'cover' / 'contain' / 
+
+            PT.imgSwapUploadCareResponsive( $(val).find('img:first'), $(val) );
+
+            // console.log($(val).data('pt-imgswap-ucr').xs);
+            
+        });
+    }
+
+
+
+    ,imgSwapUploadCareResponsive: function(_img, _div) {
+        
+        PT.log('PT.imgSwapResponsive()');
+        
+        var IMG = _img;
+        var DIV = _div;
+        var IMGurl = IMG.attr('src');
+
+
+        IMG.css('display', 'none');
+
+        if(PT._Size === 'xs'){
+            if(DIV.data('pt-imgswap-ucr').xs !== undefined){
+                IMGurl += (DIV.data('pt-imgswap-ucr').xs);                
+            }else{
+                IMGurl += ("-/resize/400x/-/effect/grayscale/");
+            }
+        }
+        if(PT._Size === 'sm'){
+            if(DIV.data('pt-imgswap-ucr').sm !== undefined){
+                IMGurl += (DIV.data('pt-imgswap-ucr').sm);                
+            }else{
+                IMGurl += ("-/resize/800x/-/effect/grayscale/");
+            }
+        }
+        if(PT._Size === 'md'){
+            if(DIV.data('pt-imgswap-ucr').md !== undefined){
+                IMGurl += (DIV.data('pt-imgswap-ucr').md);                
+            }else{
+                IMGurl += ("-/resize/1000x/-/effect/grayscale/");
+            }
+        }
+        if(PT._Size === 'lg'){
+            if(DIV.data('pt-imgswap-ucr').lg !== undefined){
+                IMGurl += (DIV.data('pt-imgswap-ucr').lg);                
+            }else{
+                IMGurl += ("-/resize/1400x/-/effect/grayscale/");
+            }
+        }
+        if(PT._Size === 'xl'){
+            if(DIV.data('pt-imgswap-ucr').xl !== undefined){
+                IMGurl += (DIV.data('pt-imgswap-ucr').xl);                
+            }else{
+                IMGurl += ("-/resize/1800x/-/effect/grayscale/");
+            }
+        }
+
+        if(DIV.data('pt-imgswap-ucr') === '' || DIV.data('pt-imgswap-ucr') === ' ' || DIV.data('pt-imgswap-ucr') === 'default' || DIV.data('pt-imgswap-ucr') === undefined){
+            // PT.log('?~? zilcho');
+        }else{
+            // PT.log('?~? ' + DIV.data('pt-imgswap-ucr'));        
+        }
+
+        // PT.log('???? ' + $(DIV.data('pt-imgswap-ucr')).length);     
+
+        PT.log(IMGurl);
+
+        DIV.css('background-image', 'url("'+IMGurl+'")' )
+            .css('background-size', 'cover')
+            .css('background-position','center');
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+    ########  ##     ## #### ##       ########                                                    
+    ##     ## ##     ##  ##  ##       ##     ##                                                   
+    ##     ## ##     ##  ##  ##       ##     ##                                                   
+    ########  ##     ##  ##  ##       ##     ##                                                   
+    ##     ## ##     ##  ##  ##       ##     ##                                                   
+    ##     ## ##     ##  ##  ##       ##     ##                                                   
+    ########   #######  #### ######## ########                                                    
+                                                   
+
+    ######## ########     ###    ##    ##  ######  #### ######## ####  #######  ##    ##  ######  
+       ##    ##     ##   ## ##   ###   ## ##    ##  ##     ##     ##  ##     ## ###   ## ##    ## 
+       ##    ##     ##  ##   ##  ####  ## ##        ##     ##     ##  ##     ## ####  ## ##       
+       ##    ########  ##     ## ## ## ##  ######   ##     ##     ##  ##     ## ## ## ##  ######  
+       ##    ##   ##   ######### ##  ####       ##  ##     ##     ##  ##     ## ##  ####       ## 
+       ##    ##    ##  ##     ## ##   ### ##    ##  ##     ##     ##  ##     ## ##   ### ##    ## 
+       ##    ##     ## ##     ## ##    ##  ######  ####    ##    ####  #######  ##    ##  ######  
+
+    =============================================================================================
+    =============================================================================================
+
+    
+    <div data-pt-transition="slide-from-left">
+    <div data-pt-transition="slide-from-right">
+    <div data-pt-transition="slide-from-top">
+    <div data-pt-transition="slide-from-bottom">
+    <div data-pt-transition="fade-in">
+
+    
+ */
+
+    ,buildTransitions: function(_DURATION) {
+        PT.log('PT.buildTransitions()', 'green');
+        
+        if ( (PT._BreakPoint === 'md') || (PT._BreakPoint === 'lg') || (PT._BreakPoint === 'lg') ) {
+            PT.addOnLoad(
+               doNow
+            );
+        }
+
+        // WE MUST WAIT UNTIL THE CONTENT IS DONE LOADING BEFORE CALCULATING THE HEIGHTS OF THE SCROLL SPY SECTIONS:
+        function doNow(){
+
+            var _D_ = typeof _DURATION !== 'undefined' ? _DURATION : false;
+            
+            var H = $(window).height();
+
+            var SLIDE_FromRight     = [];
+            var SLIDE_FromLeft      = [];
+            var SLIDE_FromBottom    = [];
+            var SLIDE_FromTop       = [];
+            var FADE_In             = [];
+
+
+
+            // CHECK THE PAGE FOR ELEMENTS AND LOAD THEM IN THE ARRAYS FOR BUILD:
+            $('[data-pt-transition]').each(function(i, val){
+                var transitionType = $(this).data('pt-transition');
+                
+                switch(transitionType) {
+                    
+                    case "slide-from-right":
+                        SLIDE_FromRight.push(this);
+                        break;
+                    
+                    case "slide-from-left":
+                        SLIDE_FromLeft.push(this);
+                        break;
+                                    
+                    case "slide-from-top":
+                        SLIDE_FromTop.push(this);
+                        break;
+                                    
+                    case "slide-from-bottom":
+                        SLIDE_FromBottom.push(this);
+                        break;
+                                                    
+                    case "fade-in":
+                        FADE_In.push(this);
+                        break;
+                    
+                    default:
+                        // default
+                        break;
+                }
+
+            });
+
+
+
+            // <div data-pt-transition="slide-from-left">
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            for (var i2=0; i2 < SLIDE_FromLeft.length; i2++){
+
+                $(SLIDE_FromLeft[i2]).parent().css({'overflow-x':'hidden'});
+
+                var tweenFromLeft = new TweenMax.from(SLIDE_FromLeft[i2], 1, {alpha:0, x:'-=50', ease:Power1.easeOut} );
+                
+                var scene_fromLeft = new ScrollMagic.Scene({
+                // var SM_Scene = new ScrollMagic.Scene({
+                    triggerElement: SLIDE_FromLeft[i2]
+                    ,triggerHook:0.9
+                })
+                // .addTo(SM_CTRL_Extras)
+                .addTo(PT.SM_CTRL)
+                .reverse(false)
+                // .addIndicators()
+                .setTween(tweenFromLeft);
+
+                if(_D_){
+                    scene_fromLeft.reverse(true);
+                    scene_fromLeft.duration(H/2);
+                }else{
+                    // MAYBE THIS SHOULD BE DESTROYED AFTER IT RUNS
+                    // scene_fromLeft.on('end', function(e){scene_fromLeft.destroy()} );
+                }
+
+            }
+
+
+
+            // <div data-pt-transition="slide-from-right">
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            for (var i1=0; i1 < SLIDE_FromRight.length; i1++){
+
+                $(SLIDE_FromRight[i1]).parent().css({'overflow-x':'hidden'});
+
+                var tweenFromRight = new TweenMax.from(SLIDE_FromRight[i1], 1, {alpha:0, x:'+=50', ease:Power1.easeOut} );
+                
+                var scene_fromRight = new ScrollMagic.Scene({
+                    triggerElement: SLIDE_FromRight[i1]
+                    ,triggerHook:0.9
+                })
+                .addTo(PT.SM_CTRL)
+                .reverse(false)
+                .setTween(tweenFromRight); 
+                
+                if(_D_){
+                    scene_fromRight.reverse(true);
+                    scene_fromRight.duration(H/2);
+                }
+
+            }
+
+
+
+            // <div data-pt-transition="slide-from-bottom">
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            for (var i3=0; i3 < SLIDE_FromBottom.length; i3++){
+
+                $(SLIDE_FromBottom[i3]).parent().css({'overflow-y':'hidden'});
+
+                var tweenFromBottom = new TweenMax.from(SLIDE_FromBottom[i3], 1, {alpha:0, y:'+=50', ease:Power1.easeOut} );
+                
+                var scene_fromBottom = new ScrollMagic.Scene({
+                    triggerElement: SLIDE_FromBottom[i3]
+                    ,triggerHook:0.9
+                })
+                .addTo(PT.SM_CTRL)
+                .reverse(false)
+                .setTween(tweenFromBottom); 
+                
+                if(_D_){
+                    scene_fromBottom.reverse(true);
+                    scene_fromBottom.duration(H/2);
+                }
+
+            }
+
+
+
+            // <div data-pt-transition="slide-from-top">
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            for (var i4=0; i4 < SLIDE_FromTop.length; i4++){
+
+                $(SLIDE_FromTop[i4]).parent().css({'overflow-y':'hidden'});
+
+                var tweenFromTop = new TweenMax.from(SLIDE_FromTop[i4], 1, {alpha:0, y:'-=50', ease:Power1.easeOut} );
+                
+                var scene_fromTop = new ScrollMagic.Scene({
+                    triggerElement: SLIDE_FromTop[i4]
+                    ,triggerHook:0.9
+                })
+                .addTo(PT.SM_CTRL)
+                .reverse(false)
+                .setTween(tweenFromTop); 
+                
+                if(_D_){
+                    scene_fromTop.reverse(true);
+                    scene_fromTop.duration(H/2);
+                }
+
+            }
+
+
+
+            // <div data-pt-transition="fade-in">
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            for (var i5=0; i5 < FADE_In.length; i5++){
+
+                var tweenFadeIn = new TweenMax.from(FADE_In[i5], 1, {alpha:0, ease:Power1.easeIn} );
+                
+                var scene_f = new ScrollMagic.Scene({
+                    triggerElement: FADE_In[i5]
+                    ,triggerHook:0.9
+                })
+                .addTo(PT.SM_CTRL)
+                .reverse(true)
+                .setTween(tweenFadeIn); 
+                
+                if(_D_){
+                    scene_f.reverse(true);
+                    scene_f.duration(H/2);
+                }
+
+            }
+
+
+
+            // THIS MIGHT BE BETTER FOR LOOPING THROUGH THE ITEMS
+            // $(SLIDE_FromRight).each(function(i, _thing_){
+                
+            //     $(_thing_).closest('.row').css({'overflow-x':'hidden'});
+                
+            //     var tweenFromRight = new TweenMax.from(_thing_, 1, {alpha:0, x:'+=50', ease:Power1.easeOut} );
+
+            //     var scene_fromRight = new ScrollMagic.Scene({
+            //         triggerElement: _thing_
+            //         ,triggerHook:0.99
+            //     })
+            //     .addTo(PT.SM_CTRL)
+            //     .setTween(tweenFromRight); 
+
+            //     if(_D_){
+            //         scene_fromRight.reverse(true);
+            //         scene_fromRight.duration(H/2);
+            //     }
+
+            // });
+
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+    ########  ##     ## #### ##       ########      ######  #### ########  ########  
+    ##     ## ##     ##  ##  ##       ##     ##    ##    ##  ##  ##     ## ##     ## 
+    ##     ## ##     ##  ##  ##       ##     ##    ##        ##  ##     ## ##     ## 
+    ########  ##     ##  ##  ##       ##     ##     ######   ##  ##     ## ########  
+    ##     ## ##     ##  ##  ##       ##     ##          ##  ##  ##     ## ##   ##   
+    ##     ## ##     ##  ##  ##       ##     ##    ##    ##  ##  ##     ## ##    ##  
+    ########   #######  #### ######## ########      ######  #### ########  ##     ## 
+                                                                                     
+                                                                                     
+     ######  #### ########  ########    ########     ###    ########                 
+    ##    ##  ##  ##     ## ##          ##     ##   ## ##   ##     ##                
+    ##        ##  ##     ## ##          ##     ##  ##   ##  ##     ##                
+     ######   ##  ##     ## ######      ########  ##     ## ########                 
+          ##  ##  ##     ## ##          ##     ## ######### ##   ##                  
+    ##    ##  ##  ##     ## ##          ##     ## ##     ## ##    ##                 
+     ######  #### ########  ########    ########  ##     ## ##     ##    
+
+    ================================================================================
+    ================================================================================
+
+
+    <a id="sidr-menu-btn" href="#sidr-main"><i class="fa fa-bars"></i></a>
+
+    <div id="site-topbar">
+        <div class="logoholder"><img class="img-responsive" src="assets/img/logo-bci-white.png" alt=""></div>
+    </div>
+
     <div id="sidr-main">
+
         <a id="sidr-close-btn" href="#"><i class="fa fa-chevron-left"></i></a>
 
         <nav>
@@ -1166,13 +1241,10 @@ var PT = {
             </ul>
         </nav>
 
-
-    
         <div class="main">
             <p>Content.</p>
         </div>
         
-
     </div>
 
 */
@@ -1401,11 +1473,88 @@ var PT = {
 
 
 
+/*
+
+    ########  ##     ## #### ##       ########                                                    
+    ##     ## ##     ##  ##  ##       ##     ##                                                   
+    ##     ## ##     ##  ##  ##       ##     ##                                                   
+    ########  ##     ##  ##  ##       ##     ##                                                   
+    ##     ## ##     ##  ##  ##       ##     ##                                                   
+    ##     ## ##     ##  ##  ##       ##     ##                                                   
+    ########   #######  #### ######## ########         
+                                               
+
+    ########   #######   #######  ########  ######  ######## ########     ###    ########         
+    ##     ## ##     ## ##     ##    ##    ##    ##    ##    ##     ##   ## ##   ##     ##        
+    ##     ## ##     ## ##     ##    ##    ##          ##    ##     ##  ##   ##  ##     ##        
+    ########  ##     ## ##     ##    ##     ######     ##    ########  ##     ## ########         
+    ##     ## ##     ## ##     ##    ##          ##    ##    ##   ##   ######### ##               
+    ##     ## ##     ## ##     ##    ##    ##    ##    ##    ##    ##  ##     ## ##               
+    ########   #######   #######     ##     ######     ##    ##     ## ##     ## ##               
+                                               
+
+    ########  #######  ########     ########     ###    ########     ##    ##    ###    ##     ## 
+       ##    ##     ## ##     ##    ##     ##   ## ##   ##     ##    ###   ##   ## ##   ##     ## 
+       ##    ##     ## ##     ##    ##     ##  ##   ##  ##     ##    ####  ##  ##   ##  ##     ## 
+       ##    ##     ## ########     ########  ##     ## ########     ## ## ## ##     ## ##     ## 
+       ##    ##     ## ##           ##     ## ######### ##   ##      ##  #### #########  ##   ##  
+       ##    ##     ## ##           ##     ## ##     ## ##    ##     ##   ### ##     ##   ## ##   
+       ##     #######  ##           ########  ##     ## ##     ##    ##    ## ##     ##    ###   
+
+    =============================================================================================
+    =============================================================================================
 
 
 
+    <div class="pt-quick-contact">
+        <ul class="social-media-icons">
+            <li><a href="#" target="_blank"><i class="fa fa-account"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-login"></i></a></li>
+            <li><i class="">&nbsp;&nbsp;&nbsp;</i></li>
+            <li><a href="#" target="_blank"><i class="fa fa-phone"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-envelope"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-map-marker"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        </ul>
+    </div>
 
 
+    <div id="pt-topbar" class="navbar navbar-default " >
+        <div class="pt-container">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#"><img src="http://placehold.it/100x50/?text=LOGO" alt="logo"></a>
+            </div>
+
+            <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+
+                <ul class="nav navbar-nav">
+                    <li id="main_nav_item_0" class="main_nav_item "><a tabindex="-1" href="#">Home</a></li>
+                    <li id="main_nav_item_1" class="main_nav_item "><a tabindex="-1" href="#">About</a></li>
+                    <li id="main_nav_item_2" class="main_nav_item "><a tabindex="-1" href="#">Contact</a></li>
+                    <li id="main_nav_item_4" class="main_nav_item dropdown"><a tabindex="-1" href="#" role="button" data-toggle="dropdown" class="dropdown-toggle">Sub Pages <b class="caret"></b></a>                        
+                        <ul role="menu" class="dropdown-menu multi-level" aria-labelledby="dropdownMenu">
+                            <li class=""><a tabindex="-1" href="#">One</a></li>
+                            <li class=""><a tabindex="-1" href="#">Two</a></li>
+                            <li class=""><a tabindex="-1" href="#">Three</a></li>
+                        </ul>
+                    </li>  
+                    <li id="main_nav_item_5" class="main_nav_item "><a tabindex="-1" href="#">New Page</a></li>
+                </ul>
+             
+            </div>
+
+        </div>
+
+    </div> 
+
+ */
 
     ,buildTopBar: function() {
 
@@ -1414,15 +1563,15 @@ var PT = {
 
         var _TopBar = $('#pt-topbar');
         var _Offset = 0;
-
         var _isSticky = false;
+
 
 
         if($('.pt-quick-contact').length ){
             $('body').addClass('has-quick-contact');
             _Offset = -$('.pt-quick-contact').height(); 
-            // _Offset = -$('.pt-quick-contact').height(); 
         }
+
 
         if( _TopBar.length ){
             PT.addOnLoad(
@@ -1438,9 +1587,9 @@ var PT = {
 
         function doNow(){
 
-            PT.log('BUILDING TOPBAR NOW ');
+            PT.log('buildTopBar()  doNow() ');
             // PT.log(_TopBar.offset().top, 'purple');
-
+            
 
             if( $('.pt-quick-contact').length ){
                 if( _TopBar.offset().top > $('.pt-quick-contact').height() ){
@@ -1455,8 +1604,11 @@ var PT = {
                     _TopBar.addClass('is-fixed-top');
                 }
             }
-                    
 
+
+
+
+            // ADD THE TRIGGER FOR THE TOP BAR:
             if(_TopBar.hasClass('is-fixed-top')){
                 _isSticky = false;
                 _TopBar.after('<div class="pt-topbar-trigger"></div>');
@@ -1466,12 +1618,16 @@ var PT = {
             }
 
 
+
+
             // EVENT LISTENERS FOR THE NAVBAR TOGGLE:
             _TopBar.find(".navbar-collapse" ).on( "show.bs.collapse", function() {
                 _TopBar.addClass('nav-is-open');
             }).on( "hidden.bs.collapse", function() {
                 _TopBar.removeClass('nav-is-open');
             });
+
+
 
 
             // IF WE'RE ON THE HOME PAGE, SCROLL TO THE TOP, IF NOT, GO TO THE HOME PAGE:
@@ -1484,20 +1640,24 @@ var PT = {
  
 
 
-            // TRIGGER FOR NAVBAR .bg-solid CLASS
-            // (SETS BG FOR NAVBAR AND SHOWS NAVBAR LOGO)
+
+            // TRIGGER FOR NAVBAR .bg-solid CLASS : ( SETS BG FOR NAVBAR AND SHOWS NAVBAR LOGO )
             var smScene1 = new ScrollMagic.Scene({
-                // triggerElement: HomePlate.find('.logoholder')
-                // triggerElement: $('body')
                 triggerElement: $('.pt-topbar-trigger')
                 ,triggerHook: '0'
             })
-            // .setClassToggle(_TopBar, "bg-solid")
-            // .setClassToggle(_TopBar, "is-fixed-top")
-            // .setClassToggle(_TopBar, "bg-solid is-fixed-top")
-            // .offset(_Offset)
-            .addIndicators()
+            // .addIndicators()
             .addTo(PT.SM_CTRL);
+
+
+
+
+            if(PT._isDevMode){
+                // .addIndicators({name:"pt-spy-to " +SpyZoneID, indent:100})      
+                smScene1.addIndicators({name:"buildTopBar " });
+            }
+
+
 
 
             if(_isSticky){
@@ -1512,13 +1672,11 @@ var PT = {
 
 
 
-
+            // ON ENTER:
             smScene1.on("enter", function (event) {
                 // PT.log('ENTER', 'purple');
-                
 
                 if(_isSticky){
-
                     if( $('.pt-quick-contact').length ){
                         if( _TopBar.offset().top > $('.pt-quick-contact').height() ){
                             $('.pt-topbar-trigger').height(_TopBar.height());
@@ -1529,25 +1687,253 @@ var PT = {
                         }
                     }
                 }
-            
             });     
 
+
+
+
+            // ON LEAVE:
             smScene1.on("leave", function (event) {
                 // PT.log('LEAVE', 'purple');
+
                 $('.pt-topbar-trigger').height(0);
             });            
 
-
-
         }
-
-
 
     }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+    =========================================================================================
+    =========================================================================================
+
+                                 ##     ## ####  ######   ######                  
+                     ##   ##     ###   ###  ##  ##    ## ##    ##     ##   ##     
+                      ## ##      #### ####  ##  ##       ##            ## ##      
+                    #########    ## ### ##  ##   ######  ##          #########    
+                      ## ##      ##     ##  ##        ## ##            ## ##      
+                     ##   ##     ##     ##  ##  ##    ## ##    ##     ##   ##     
+                                 ##     ## ####  ######   ######                  
+
+    =========================================================================================
+    =========================================================================================
+ */
+
+
+
+
+
+
+
+
+
+/*
+
+    ##     ##  #######  ##    ## #### ########  #######  ########        ######## ########   ######  
+    ###   ### ##     ## ###   ##  ##     ##    ##     ## ##     ##       ##       ##     ## ##    ## 
+    #### #### ##     ## ####  ##  ##     ##    ##     ## ##     ##       ##       ##     ## ##       
+    ## ### ## ##     ## ## ## ##  ##     ##    ##     ## ########        ######   ########   ######  
+    ##     ## ##     ## ##  ####  ##     ##    ##     ## ##   ##         ##       ##              ## 
+    ##     ## ##     ## ##   ###  ##     ##    ##     ## ##    ##        ##       ##        ##    ## 
+    ##     ##  #######  ##    ## ####    ##     #######  ##     ##       ##       ##         ######  
+
+    ================================================================================================
+    ================================================================================================
+
+    ADDS A FPS (FramePerSecond) MONITOR TO THE PAGE:
+
+    PT.monitorFPS();
+
+ */
+
+    ,monitorFPS:function(){
+
+        PT.addOnLoad(
+            doNow
+        );
+
+        function doNow(){
+            Justice.init(); 
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+    ########    ###     ######  ########     ######  ##       ####  ######  ##    ## 
+    ##         ## ##   ##    ##    ##       ##    ## ##        ##  ##    ## ##   ##  
+    ##        ##   ##  ##          ##       ##       ##        ##  ##       ##  ##   
+    ######   ##     ##  ######     ##       ##       ##        ##  ##       #####    
+    ##       #########       ##    ##       ##       ##        ##  ##       ##  ##   
+    ##       ##     ## ##    ##    ##       ##    ## ##        ##  ##    ## ##   ##  
+    ##       ##     ##  ######     ##        ######  ######## ####  ######  ##    ## 
+
+    =================================================================================
+    =================================================================================
+    
+ */
+
+    ,fastClick:function(){
+        FastClick.attach(document.body);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+     ######   ######## ########     ######  #### ######## ######## 
+    ##    ##  ##          ##       ##    ##  ##       ##  ##       
+    ##        ##          ##       ##        ##      ##   ##       
+    ##   #### ######      ##        ######   ##     ##    ######   
+    ##    ##  ##          ##             ##  ##    ##     ##       
+    ##    ##  ##          ##       ##    ##  ##   ##      ##       
+     ######   ########    ##        ######  #### ######## ########
+
+    ==============================================================
+    ==============================================================
+
+ */
+
+    ,getSize: function(){
+
+        return PT._Size;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+       ###    ########  ########                               
+      ## ##   ##     ## ##     ##                              
+     ##   ##  ##     ## ##     ##                              
+    ##     ## ##     ## ##     ##                              
+    ######### ##     ## ##     ##                              
+    ##     ## ##     ## ##     ##                              
+    ##     ## ########  ########                    
+
+    ########     ###    ##    ## ########   #######  ##     ## 
+    ##     ##   ## ##   ###   ## ##     ## ##     ## ###   ### 
+    ##     ##  ##   ##  ####  ## ##     ## ##     ## #### #### 
+    ########  ##     ## ## ## ## ##     ## ##     ## ## ### ## 
+    ##   ##   ######### ##  #### ##     ## ##     ## ##     ## 
+    ##    ##  ##     ## ##   ### ##     ## ##     ## ##     ## 
+    ##     ## ##     ## ##    ## ########   #######  ##     ## 
+                                                                
+     ######  ##          ###     ######   ######               
+    ##    ## ##         ## ##   ##    ## ##    ##              
+    ##       ##        ##   ##  ##       ##                    
+    ##       ##       ##     ##  ######   ######               
+    ##       ##       #########       ##       ##              
+    ##    ## ##       ##     ## ##    ## ##    ##              
+     ######  ######## ##     ##  ######   ######               
+                                                 
+    ====================================================================================
+    ====================================================================================
+    
+    PT.addRandomClass('.homeplate', ['bg-r1', 'bg-r2', 'bg-r3']);
+
+ */
+
+
+
+    ,addRandomClass: function(_obj, _arr) {
+        PT.log('addRandomClass()');
+        var arr = _arr;
+        var obj = $(_obj);
+        obj.addClass( arr[ Math.floor(Math.random() * arr.length)  ]  );
+    }
+
+
+
+
+
+
+
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
