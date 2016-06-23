@@ -775,7 +775,8 @@ var PT = {
 
     ======================================================================================================
     ======================================================================================================
-
+    
+    // data-pt-imgswap-ucr (-ucr = Upload Care Responsive)
 
     //<div class="testy" data-pt-imgswap-ucr=''>
     //<div class="testy" data-pt-imgswap-ucr='{"md":"-/resize/1000x/-/blur/30/", "lg":"-/resize/1200x/", "xl":"-/resize/2000x/"}'>
@@ -793,19 +794,16 @@ var PT = {
 */
 
 
+
     // RUNS PT.imgSwap ON A PRESET BUNCH OF CLASSSES;
     ,runImgSwapUploadCareResponsive: function() {
-        PT.log('PT.runImgSwapUploadCareResponsive()');
+        // PT.log('PT.runImgSwapUploadCareResponsive()');
 
         $('[data-pt-imgswap-ucr]').each(function(i, val){
-
             // check the data attribute value and pass it along to the imgSwap function.
             // var _bgStyle = ;// 'cover' / 'contain' / 
-
             PT.imgSwapUploadCareResponsive( $(val).find('img:first'), $(val) );
-
-            // console.log($(val).data('pt-imgswap-ucr').xs);
-            
+            // console.log($(val).data('pt-imgswap-ucr').xs); 
         });
     }
 
@@ -1285,7 +1283,9 @@ var PT = {
 
 
             // TURNS THE NESTED <ul>'s INTO ACCORDION NAV:
-            _sidrMAIN.find('nav ul').navgoco();
+            // _sidrMAIN.find('nav ul').navgoco();
+            _sidrMAIN.find('nav > ul').navgoco();
+            // _sidrMAIN.find('nav ul').navgoco({ accordion: true });
      
 
 
@@ -1303,9 +1303,9 @@ var PT = {
             }else{
                 // _sidrSIDE = "right";
                 $(_sidrBTN).addClass('right');
-                $(_sidrTOPBAR).addClass('left');
-                
+                $(_sidrTOPBAR).addClass('left');   
             }
+
 
 
 
@@ -1332,6 +1332,7 @@ var PT = {
             });
 
 
+
             // ON CLICK, CLOSE THE SIDR MENU:
             _sidrCOVER.on('click', function(e){
                 $.sidr('close', _sidrMAIN.attr('id'));
@@ -1348,23 +1349,22 @@ var PT = {
             // });
 
 
-/*
-            PT._SSM.addStates([
-                {
-                    id: 'sidr-show',
-                    query: '(min-width: 1200px)',
-                    onEnter: function(){  
-                        startResize();
-                        $.sidr('open', 'sidr-main');
-                    },
-                    onLeave: function(){
-                        endResize();
-                        $.sidr('close', 'sidr-main');
-                    }
-                }
-            ]);
-*/
-
+            /*
+                        PT._SSM.addStates([
+                            {
+                                id: 'sidr-show',
+                                query: '(min-width: 1200px)',
+                                onEnter: function(){  
+                                    startResize();
+                                    $.sidr('open', 'sidr-main');
+                                },
+                                onLeave: function(){
+                                    endResize();
+                                    $.sidr('close', 'sidr-main');
+                                }
+                            }
+                        ]);
+            */
 
 
 
@@ -1419,23 +1419,23 @@ var PT = {
 
 
         /*
-        function resizer() {
-            console.log('resizer()');
-            TweenMax.to(['.viewport', '#site-topbar'], 0.3, { left:$('#sidr-main').width() , width:$(window).width() - $('#sidr-main').width() });
-        }
+                        function resizer() {
+                            console.log('resizer()');
+                            TweenMax.to(['.viewport', '#site-topbar'], 0.3, { left:$('#sidr-main').width() , width:$(window).width() - $('#sidr-main').width() });
+                        }
 
-        function startResize() {
-            console.log('startResize()');
-            $(window).resize(resizer);
-            TweenMax.to(['.viewport', '#site-topbar'], 0.3, { left:$('#sidr-main').width() , width:$(window).width() - $('#sidr-main').width() });
-        }
+                        function startResize() {
+                            console.log('startResize()');
+                            $(window).resize(resizer);
+                            TweenMax.to(['.viewport', '#site-topbar'], 0.3, { left:$('#sidr-main').width() , width:$(window).width() - $('#sidr-main').width() });
+                        }
 
-        function endResize() {
-            console.log('endResize()');
-            $(window).off("resize", resizer);
-            TweenMax.to(['.viewport','#site-topbar'], 0.3, { left:0, width:'100%' });
+                        function endResize() {
+                            console.log('endResize()');
+                            $(window).off("resize", resizer);
+                            TweenMax.to(['.viewport','#site-topbar'], 0.3, { left:0, width:'100%' });
 
-        }
+                        }
         */
 
 

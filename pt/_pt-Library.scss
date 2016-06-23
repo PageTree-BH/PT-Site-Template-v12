@@ -78,18 +78,20 @@
 
 
 
+.pt-p,
+.pt-pad,
 .pt-padded{	
 	padding-top:2em;
 	padding-bottom:2em;
 }
 
-.pt-padded-x2, .pt-padded-2x { padding:5em 0; }
-.pt-padded-x3, .pt-padded-3x { padding:7em 0; }
-.pt-padded-x4, .pt-padded-4x { padding:10em 0; }
-.pt-padded-x5, .pt-padded-5x { padding:12em 0; }
-.pt-padded-x6, .pt-padded-6x { padding:15em 0; }
-.pt-padded-x7, .pt-padded-7x { padding:17em 0; }
-.pt-padded-x8, .pt-padded-8x { padding:20em 0; }
+.pt-p2, .pt-pad2, .pt-padded-x2, .pt-padded-2x { padding:5em 0; }
+.pt-p3, .pt-pad3, .pt-padded-x3, .pt-padded-3x { padding:7em 0; }
+.pt-p4, .pt-pad4, .pt-padded-x4, .pt-padded-4x { padding:10em 0; }
+.pt-p5, .pt-pad5, .pt-padded-x5, .pt-padded-5x { padding:12em 0; }
+.pt-p6, .pt-pad6, .pt-padded-x6, .pt-padded-6x { padding:15em 0; }
+.pt-p7, .pt-pad7, .pt-padded-x7, .pt-padded-7x { padding:17em 0; }
+.pt-p8, .pt-pad8, .pt-padded-x8, .pt-padded-8x { padding:20em 0; }
 
 
 .pt-padded-all{	padding:2em; }
@@ -102,9 +104,8 @@
 .pt-padded-all-x7, .pt-padded-all-7x { padding:17em; }
 .pt-padded-all-x8, .pt-padded-all-8x { padding:20em; }
 
-
-
-
+.pt-pr,
+.pt-pad-r,
 .pt-padded-responsive{
 
   padding:1em;
@@ -118,13 +119,6 @@
   }
 
 }
-
-
-
-
-
-
-
 
 
 .pt-margin{	margin:2em 0; }
@@ -147,6 +141,179 @@
 .pt-margin-all-x6, .pt-margin-all-6x { margin:15em; }
 .pt-margin-all-x7, .pt-margin-all-7x { margin:17em; }
 .pt-margin-all-x8, .pt-margin-all-8x { margin:20em; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    This is an interesting chunk that I sorof half sampled from BootStrap.
+
+    
+    
+ */
+
+$spacer:                     1rem !default;
+$spacer-x:                   $spacer !default;
+$spacer-y:                   $spacer !default;
+
+$spacers: (
+  0: (
+    x:   0,
+    y:   0
+  ),
+  1: (
+    x:   $spacer-x,
+    y:   $spacer-y
+  ),
+  2: (
+    x:   ($spacer-x * 1.5),
+    y:   ($spacer-y * 1.5)
+  ),
+  3: (
+    x:   ($spacer-x * 3),
+    y:   ($spacer-y * 3)
+  ),
+  4: (
+    x:   ($spacer-x * 4),
+    y:   ($spacer-y * 4)
+  )
+) !default;
+
+
+
+@each $prop, $abbrev in (margin: m, padding: p) {
+  
+    @each $size, $lengths in $spacers {
+        $length-x:   map-get($lengths, x);
+        $length-y:   map-get($lengths, y);
+
+        .pt-#{$abbrev}-a-#{$size} { #{$prop}:        $length-y $length-x !important; } // a = All sides
+        .pt-#{$abbrev}-t-#{$size} { #{$prop}-top:    $length-y !important; }
+        .pt-#{$abbrev}-r-#{$size} { #{$prop}-right:  $length-x !important; }
+        .pt-#{$abbrev}-b-#{$size} { #{$prop}-bottom: $length-y !important; }
+        .pt-#{$abbrev}-l-#{$size} { #{$prop}-left:   $length-x !important; }
+
+        // Axes
+        .pt-#{$abbrev}-x-#{$size} {
+          #{$prop}-right:  $length-x !important;
+          #{$prop}-left:   $length-x !important;
+        }
+
+        .pt-#{$abbrev}-y-#{$size} {
+          #{$prop}-top:    $length-y !important;
+          #{$prop}-bottom: $length-y !important;
+        }
+
+
+        .pt-#{$abbrev}-r-#{$size} { 
+            
+            transition:0.3s;
+
+            #{$prop}: $length-y $length-x !important; 
+
+            @include ptBreakpoint($sm){
+                #{$prop}: $length-y*2 $length-x*2 !important; 
+            }
+            @include ptBreakpoint($md){
+                #{$prop}: $length-y*3 $length-x*3 !important; 
+            }
+            @include ptBreakpoint($lg){
+                #{$prop}: $length-y*5 $length-x*5 !important; 
+            }
+            @include ptBreakpoint($xl){
+                #{$prop}: $length-y*6 $length-x*6 !important; 
+            }
+
+
+        } 
+
+    }
+
+}
+
+/* 
+
+
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -230,37 +397,6 @@
 
 
 
-// .pt-bg-parallax,
-// .pt-parallax-bg{
-// 	overflow:hidden;
-// 	position:absolute; 
-// 	top:0; bottom:0;	  
-// 	left:0;	right:0;
-
-// 	width:100%;
-// 	z-index:-1;
-
-// 	.imInEditMode &{
-// 	    position:relative;
-// 	    z-index:0;
-// 	}
-// }
-
-
-
-
-
-
-// .pt-container-parallax,
-// .pt-parallax-container{
-//   overflow:hidden;
-// }
-
-
-
-
-
-
 
 
 
@@ -321,6 +457,15 @@
 
 
 
+
+
+
+
+
+
+
+
+
  
 
  
@@ -334,76 +479,6 @@
 	justify-content:center;
 	// align-items:center;
 }
-
-
-/* 
-	.pt-pos-1{
-		@extend .pt-pos;
-		align-items: flex-start;
-		justify-content:  flex-start;
-		text-align: left;
-	}
-
-	.pt-pos-2{
-		@extend .pt-pos;
-	 	align-items: center;
-		justify-content:  flex-start;
-		text-align: center;
-	}
-
-	.pt-pos-3{
-		@extend .pt-pos;
-	 	align-items: flex-end;
-		justify-content:  flex-start;
-		text-align: right;
-	}
-
-	.pt-pos-4{
-		@extend .pt-pos;
-		align-items: flex-start;
-		justify-content:  center;
-		text-align: left;
-	}
-
-	.pt-pos-5{
-		@extend .pt-pos;
-		align-items: center;
-		justify-content:  center;
-		text-align: center;
-	}
-
-	.pt-pos-6{
-		@extend .pt-pos;
-		align-items: flex-end;
-		justify-content:  center;
-		text-align: right;
-	}
-
-	.pt-pos-7{
-		@extend .pt-pos;
-		align-items: flex-start;
-		justify-content:  flex-end;
-		text-align: left;
-	}
-
-	.pt-pos-8{
-		@extend .pt-pos;
-		align-items: center;
-		justify-content:  flex-end;
-		text-align: center;
-	}
-
-	.pt-pos-9{
-		@extend .pt-pos;
-		align-items: flex-end;
-		justify-content:  flex-end;
-		text-align: right;
-	}
-*/
-
-
-
-
 
 
 .pt-pos-1{	@include ptPos(1);	}
@@ -488,6 +563,34 @@
 	z-index:999999;
 	// line-height:0.8em;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -618,6 +721,15 @@
 .redactor-editor{
     padding:0 !important;
 }
+
+
+
+
+
+
+
+
+
 
 
 

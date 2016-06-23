@@ -121,7 +121,7 @@
             &.sidr-class-active {
                 // border-top: 0;
                 line-height: 48px;
-                background-color:darken($sidr-background, 10%);
+                // background-color:darken($sidr-background, 10%);
                 > a,
                 > span {
                     // box-shadow: 0 0 15px 3px $sidr-background-shadow-color inset;
@@ -129,13 +129,13 @@
 
                 ul li {
 
-                    background-color:darken($sidr-background, 5%);
+                    // background-color:darken($sidr-background, 5%);
                     // background-color:$sidr-background;
 
                     &:hover,
                     &.active,
                     &.sidr-class-active {        
-                        background-color:darken($sidr-background, 10%);
+                        // background-color:darken($sidr-background, 10%);
                         // background-color:$sidr-background;
                     }
                 }
@@ -169,7 +169,7 @@
                         // border-top: 0;
                         line-height: 40px;
                         
-                        background-color:darken($sidr-background, 10%);
+                        // background-color:darken($sidr-background, 10%);
                         
                         > a,
                         > span {
