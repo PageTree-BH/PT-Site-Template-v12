@@ -26,7 +26,9 @@
     }
 
 }(function($) {
+
     'use strict';
+    
     var Slick = window.Slick || {};
 
     Slick = (function() {
@@ -57,7 +59,8 @@
                 dots: false,
                 dotsClass: 'slick-dots',
                 draggable: true,
-                easing: 'linear',
+                // easing: 'linear',
+                easing: 'ease-in-out',
                 edgeFriction: 0.35,
                 fade: false,
                 focusOnSelect: false,

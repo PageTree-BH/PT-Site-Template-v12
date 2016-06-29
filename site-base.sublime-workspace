@@ -1,0 +1,1613 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"trna",
+				"translateY"
+			],
+			[
+				"ease",
+				"easeNone"
+			],
+			[
+				"sm",
+				"section-event-mini-bmx"
+			],
+			[
+				"_is",
+				"_isDevMode"
+			],
+			[
+				"nwg",
+				"nwg-skew"
+			],
+			[
+				"trans",
+				"translateY"
+			],
+			[
+				"nw",
+				"nwg-skew"
+			],
+			[
+				"bore",
+				"border-radius"
+			],
+			[
+				"pt",
+				"pt-color-primary"
+			],
+			[
+				"prevent",
+				"preventDefault"
+			],
+			[
+				"loke",
+				"lokeynav-breakpoint"
+			],
+			[
+				"backgorun",
+				"background-color"
+			],
+			[
+				"over",
+				"overflow-x"
+			],
+			[
+				"time",
+				"timeScale"
+			],
+			[
+				"auto",
+				"autoAlpha"
+			],
+			[
+				"to",
+				"toString"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"10px",
+				"10px"
+			],
+			[
+				"list",
+				"list:n	list-style-type:none"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"P",
+				"Power1"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"build",
+				"buildAboutMeScrollMagic"
+			],
+			[
+				"sec",
+				"secondary-color"
+			],
+			[
+				"eas",
+				"easeInOut"
+			],
+			[
+				"backgrou",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "SITE-VARS.scss",
+			"settings":
+			{
+				"buffer_size": 1243,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pt/_PT-MIXINS.scss",
+			"settings":
+			{
+				"buffer_size": 4960,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "SITE-VARS_CMS.scss",
+			"settings":
+			{
+				"buffer_size": 10867,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pt/_pt-Library.scss",
+			"settings":
+			{
+				"buffer_size": 12571,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "kitchen-sink.kit",
+			"settings":
+			{
+				"buffer_size": 9145,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "site.kit",
+			"settings":
+			{
+				"buffer_size": 8211,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "site.scss",
+			"settings":
+			{
+				"buffer_size": 1226,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sasskits/_site-base.scss",
+			"settings":
+			{
+				"buffer_size": 8487,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "site.js",
+			"settings":
+			{
+				"buffer_size": 751,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pt/pt-base-v12.js",
+			"settings":
+			{
+				"buffer_size": 55420,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"syntax html",
+				"Set Syntax: HTML"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"set html",
+				"Set Syntax: HTML"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"color",
+				"Color Picker"
+			],
+			[
+				"set syntax html",
+				"Set Syntax: HTML"
+			],
+			[
+				"s",
+				"Set Syntax: HTML"
+			],
+			[
+				"synta",
+				"Set Syntax: HTML"
+			],
+			[
+				"set syn html",
+				"Set Syntax: HTML"
+			],
+			[
+				"sen html",
+				"Set Syntax: HTML"
+			],
+			[
+				"synta html	",
+				"Set Syntax: HTML"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"colo",
+				"Color Picker"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"set php",
+				"Set Syntax: PHP"
+			],
+			[
+				"colorp",
+				"Color Picker"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"remove pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"disable lin",
+				"SublimeLinter: Disable Linter"
+			],
+			[
+				"linter",
+				"SublimeLinter: Disable Linter"
+			],
+			[
+				"set sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"setsyn sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"instal	",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"package inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install e",
+				"Package Control: Install Package"
+			],
+			[
+				"set sy css",
+				"Set Syntax: CSS"
+			],
+			[
+				"Package Control:",
+				"Package Control: Install Package"
+			],
+			[
+				"set syntax sass",
+				"Set Syntax: Sass"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 51.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/brandon/Documents/PT-PROJECT-TEMPLATES/PT-Site-Template-v12/sasskits/sidr/sidr_custom.scss",
+		"/Users/brandon/Documents/PT-PROJECT-TEMPLATES/PT-Site-Template-v12/sasskits/homeplate.scss",
+		"/Users/brandon/Documents/PT-PROJECT-TEMPLATES/PT-Site-Template-v12/sasskits/ab-sections.kit",
+		"/Users/brandon/Documents/PT-PROJECT-TEMPLATES/PT-Site-Template-v12/sasskits/ab-sections.scss",
+		"/Users/brandon/Documents/PT-PROJECT-TEMPLATES/PT-Site-Template-v12/pt/_PT-MIXINS.scss",
+		"/Users/brandon/Documents/PT-PROJECT-TEMPLATES/PT-Site-Template-v12/sections.kit",
+		"/Users/brandon/Documents/PT-PROJECT-TEMPLATES/PT-Site-Template-v12/sasskits/sidr/sidr_base.scss",
+		"/Users/brandon/Documents/PT-PROJECT-TEMPLATES/PT-Site-Template-v12/sasskits/Navigation-TopBar.kit",
+		"/Users/brandon/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/brandon/Google Drive/Clients (2015)/Nitro World Games/nwg-site/sasskits/nwg-nav.kit",
+		"/Users/brandon/Google Drive/Clients (2015)/Nitro World Games/nwg-site/sasskits/page-ticketspage.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Nitro World Games/nwg-site/pt/pt-base-lib-bundle-v9.js",
+		"/Users/brandon/Google Drive/Clients (2015)/Nitro World Games/nwg-site/sasskits/nwg-articles.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Nitro World Games/nwg-site/sasskits/page-eventpage.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Nitro World Games/nwg-site/sasskits/page-venuepage.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Nitro World Games/nwg-site/article.kit",
+		"/Users/brandon/Google Drive/Clients (2015)/Nitro World Games/nwg-site/site.kit",
+		"/Users/brandon/Google Drive/Clients (2015)/Nitro World Games/nwg-site/venue.kit",
+		"/Users/brandon/Google Drive/Clients (2015)/Nitro World Games/nwg-site/about.kit",
+		"/Users/brandon/Google Drive/Clients (2015)/Nitro World Games/nwg-site/events.kit",
+		"/Users/brandon/Google Drive/Clients (2015)/Nitro World Games/nwg-site/pt/pt-base-v11.js",
+		"/Users/brandon/Google Drive/Clients (2015)/Nitro World Games/nwg-site/test.kit",
+		"/Users/brandon/Google Drive/Clients (2015)/Nitro World Games/nwg-site/nwg.sublime-project",
+		"/Users/brandon/Google Drive/Clients (2015)/Nitro World Games/nwg-site/SITE-VARS.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Nitro World Games/nwg-site/sasskits/responsive-images.kit",
+		"/Users/brandon/Google Drive/Clients (2015)/Nitro World Games/nwg-site/sasskits/NWG-Navigation.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Nitro World Games/nwg-site/sasskits/sidr/sidr_custom.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Nitro World Games/nwg-site/sasskits/nwg-menu.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Nitro World Games/nwg-site/news.kit",
+		"/Users/brandon/Google Drive/Clients (2015)/Nitro World Games/nwg-site/sasskits/page-aboutpage.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Nitro World Games/nwg-site/sasskits/ab-sections.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Nitro World Games/nwg-site/sasskits/page-eventpage_v1-backup.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Nitro World Games/nwg-site/events_v1-backup.kit",
+		"/Users/brandon/Google Drive/Clients (2015)/Nitro World Games/nwg-site/pt/_pt-Library.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Nitro World Games/nwg-site/sasskits/section-articles-mini.kit",
+		"/Users/brandon/Google Drive/Clients (2015)/Nitro World Games/nwg-site/sasskits/typography.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Nitro World Games/nwg-site/sasskits/section-news-mini.kit",
+		"/Users/brandon/Google Drive/Clients (2015)/Nitro World Games/nwg-site/sasskits/typography.kit",
+		"/Users/brandon/Google Drive/Clients (2015)/Nitro World Games/nwg-site/sasskits/section-events-mini.kit",
+		"/Users/brandon/Google Drive/Clients (2015)/Nitro World Games/nwg-site/pt/_PT-MIXINS.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Nitro World Games/nwg-site/sasskits/headers.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Nitro World Games/nwg-site/sasskits/home-nwg-sections.scss",
+		"/Users/brandon/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/brandon/Google Drive/Clients (2015)/Nitro World Games/nwg-site/sasskits/nwg-menu.kit",
+		"/Users/brandon/Google Drive/Clients (2015)/Sun Supply/ss-site/sasskits/ab-section-library.kit",
+		"/Users/brandon/Google Drive/Clients (2015)/Sun Supply/ss-site/sasskits/responsive-images.kit",
+		"/Users/brandon/Google Drive/Clients (2015)/Sun Supply/ss-site/pt/_PT-MIXINS.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Sun Supply/ss-site/sasskits/homeplate.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Sun Supply/ss-site/sasskits/typography.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/_Templates/pt-site-template-v11/sasskits/responsive-images.kit",
+		"/Users/brandon/Google Drive/Clients (2015)/Sun Supply/ss-site/sasskits/mountains.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Sun Supply/ss-site/sections.kit",
+		"/Users/brandon/Google Drive/Clients (2015)/_Templates/pt-site-template-v11/sasskits/_site-base.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/_Templates/pt-site-template-v11/site.kit",
+		"/Users/brandon/Google Drive/Clients (2015)/_Templates/pt-site-template-v11/sasskits/homeplate.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Sun Supply/ss-site/pt/pt-base-v11.js",
+		"/Users/brandon/Google Drive/Clients (2015)/Sun Supply/ss-site/sasskits/top-navigation.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Sun Supply/ss-site/sasskits/ab-sections.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Sun Supply/ss-site/sasskits/_site-base.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/_Templates/pt-site-template-v11/site.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/_Templates/pt-site-template-v11/sasskits/top-navigation.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/_Templates/pt-site-template-v11/sasskits/ab-sections.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/_Templates/pt-site-template-v11/pt/pt-base-v11.js",
+		"/Users/brandon/Google Drive/Clients (2015)/Sun Supply/ss-site/site.kit",
+		"/Users/brandon/Desktop/__SAVE__/nwg/pt-base-v11.js",
+		"/Users/brandon/Google Drive/Clients (2015)/_Templates/pt-site-template-v11/site.js",
+		"/Users/brandon/Google Drive/Clients (2015)/Beverage Control/bci_site/pt/_pt-Library.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Beverage Control/bci_site/pt/_PT-MIXINS.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Beverage Control/bci_site/pt/pt-base-lib-bundle-v9.js",
+		"/Users/brandon/Desktop/__SAVE__/bci/site.js",
+		"/Users/brandon/Google Drive/Clients (2015)/Beverage Control/bci_site/sasskits/slick/slick.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Beverage Control/bci_site/sasskits/slick/slick-theme.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Beverage Control/bci_site/sasskits/slick/slick.js",
+		"/Users/brandon/Google Drive/Clients (2015)/Beverage Control/bci_site/side-menu.js",
+		"/Users/brandon/Google Drive/Clients (2015)/Beverage Control/bci_site/sasskits/responsive-images.kit",
+		"/Users/brandon/Google Drive/Clients (2015)/Beverage Control/bci_site/sasskits/typography.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Beverage Control/bci_site/sasskits/top-navigation.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Beverage Control/bci_site/sasskits/side-navigation.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Beverage Control/bci_site/sasskits/sidr/jquery.sidr.dark.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Beverage Control/bci_site/sasskits/headers.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Beverage Control/bci_site/sasskits/sidr/jquery.sidr.bare.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Beverage Control/bci_site/sasskits/sidr/jquery.sidr.light.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Beverage Control/bci_site/sasskits/sidr/_base.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Beverage Control/bci_site/pt/_BootstrapMods.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Beverage Control/bci_site/config.codekit",
+		"/Users/brandon/Google Drive/Clients (2015)/_Templates/pt-site-template-v10/_deploy/assets/js/jquery.jpanelmenu.js",
+		"/Users/brandon/Google Drive/Clients (2015)/_Templates/pt-site-template-v10/lib/jpanelmenu/jquery.jpanelmenu.js",
+		"/Users/brandon/Google Drive/Clients (2015)/_Templates/pt-site-template-v10/sasskits/typography.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/_Templates/pt-site-template-v10/pt/_FlexsliderMods.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/_Templates/pt-site-template-v10/sasskits/ab-sections.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/_Templates/pt-site-template-v10/sasskits/ab-sections.kit",
+		"/Users/brandon/Google Drive/Clients (2015)/Brookings Anglers/ba_site/pt/_pt-Library.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Brookings Anglers/ba_site/site.js",
+		"/Users/brandon/Google Drive/Clients (2015)/Brookings Anglers/images/mountains-new.svg",
+		"/Users/brandon/Google Drive/Clients (2015)/Brookings Anglers/images/mountains-new-bdh.svg",
+		"/Users/brandon/Google Drive/Clients (2015)/Jon Jurgens/website/build/js/jj-site.js",
+		"/Users/brandon/Google Drive/Clients (2015)/Lokey Law Firm/Lokey-Website-pt8/site-lokey.js",
+		"/Users/brandon/Google Drive/Clients (2015)/Adams Property Group/apg_site/pt/_FlexsliderMods.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Adams Property Group/apg_site/pt/_BootstrapMods.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Adams Property Group/apg_site/index.kit",
+		"/Users/brandon/Google Drive/Clients (2015)/Adams Property Group/apg_site/sasskits/typography.kit",
+		"/Users/brandon/Google Drive/Clients (2015)/_Templates/pt-mod7-template/build/kits/sections/tabs.kit",
+		"/Users/brandon/Google Drive/Clients (2015)/Adams Property Group/apg_site/CMS-head-scripts.kit",
+		"/Users/brandon/Google Drive/Clients (2015)/Adams Property Group/apg_site/sasskits/typography.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Adams Property Group/apg_site/sasskits/responsive-images.kit",
+		"/Users/brandon/Google Drive/Clients (2015)/Adams Property Group/apg_site/pt/pt-base-v9.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Adams Property Group/apg_site/_deploy/assets/js/modernizr-custom.js",
+		"/Users/brandon/Google Drive/Clients (2015)/Adams Property Group/apg_site/index-backup.kit",
+		"/Users/brandon/Google Drive/Clients (2015)/Adams Property Group/apg_site/_deploy/index.html",
+		"/Users/brandon/Google Drive/Clients (2015)/Adams Property Group/apg_site/SITE-VARS.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Adams Property Group/apg_site/pt/pt-base-v8.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Adams Property Group/apg_site/sasskits/site-base.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Adams Property Group/apg_site/sasskits/_site-base.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Adams Property Group/apg_site/site-base.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Adams Property Group/apg_site/pt/_pt-Library.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Adams Property Group/apg_site/pt/_PT-MIXINS.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Adams Property Group/apg_site/sasskits/__SITE-VARS.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/_PT-Frameworks/PT/pt-v8/pt/pt-base-v8.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Adams Property Group/apg_site/sasskits/navbar.kit",
+		"/Users/brandon/Google Drive/Clients (2015)/Adams Property Group/apg_site/sass/_site-base.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/_PT-Frameworks/PT/pt-v8/_PT-MIXINS.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Adams Property Group/apg_site/pt/pt-base-lib-bundle-v9.js",
+		"/Users/brandon/Google Drive/Clients (2015)/Adams Property Group/apg_site/pt/pt-base-lib-bundle_v9.js",
+		"/Users/brandon/Google Drive/Clients (2015)/Adams Property Group/apg_site/pt-base-IMPORTED.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/Adams Property Group/apg_site/pt-base-IMPORTED.js",
+		"/Users/brandon/Google Drive/Clients (2015)/_PT-Frameworks/pt-base-v8/pt-sass/_pt-Library.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/_PT-Frameworks/pt-base-v8/pt-sass/--_MIXINS.scss",
+		"/Users/brandon/Google Drive/Clients (2015)/_PT-Frameworks/pt-template-v8.1/sass/_site-base.scss"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"",
+			"this file",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"INTR",
+			"_isSticky",
+			"pt-topbar-trigger",
+			"trigger",
+			"addIndicators",
+			"open",
+			"PT.log",
+			"resize",
+			"viewport",
+			"A",
+			"length",
+			"_sidrMAIN.data('sidr-side')",
+			"SIDR",
+			"sidr",
+			"$sitenav-height",
+			"PT.",
+			"log",
+			"ptLog",
+			"nwg-article",
+			" \n",
+			"eventpage-about",
+			".section-header",
+			".section-info",
+			"_SSM",
+			"runStickies",
+			"buildTransitions",
+			"_DURATION",
+			"buildTransitions",
+			"addIndi",
+			"article-tease",
+			"scrollT",
+			"1px solid",
+			"opacity",
+			"Flip",
+			"flip",
+			"section-events-mini-holder",
+			"data-nwg-animate-pageheader-events",
+			"section-ab",
+			"sidr-font-family",
+			"buildNav",
+			"alert",
+			"article-headline",
+			"build_PageHeader_Events_Animations",
+			"build_PageHeader_Event",
+			"black",
+			"-action",
+			"span",
+			"article-tease",
+			"articles-holder",
+			".events-action",
+			"headline",
+			"imgSwap",
+			"section-",
+			"section-event",
+			"nwg-text",
+			"pageheader-venue",
+			"tease",
+			"trigger Spla",
+			"buildArticleSectionAnimations",
+			"callee",
+			"animateEXTRAS",
+			"H",
+			"buildArticleSectionAnimations",
+			"adaptiveHeight",
+			"buildArticleGALLERY",
+			"buildArticleSectionAnimations",
+			"data-nwg-animate-article-section",
+			"-nwg-animate-article-",
+			"bg",
+			"_BreakPoint",
+			"transition",
+			"solid",
+			"article-summary",
+			"headline",
+			"article-headline",
+			"body",
+			"holder",
+			"        \n",
+			"article",
+			"spaces",
+			"splat",
+			"buildHomeSectionAnimations",
+			"resetANIMATIONS",
+			"buildSectionAnimations",
+			"resetANIMATIONS",
+			"theme-home",
+			"page-home",
+			"sticky",
+			"homepla",
+			"sitenav-height",
+			"splat",
+			"bg-splat",
+			"PT.log",
+			"pt.log",
+			"section-action",
+			"jPanelBeforeOpen",
+			"font",
+			"slick-font-family",
+			"slick-font-path",
+			"padding",
+			"$topbar-height",
+			"buildNavSpy",
+			"$sidebar-width",
+			"5em",
+			"orange",
+			"center",
+			"transition",
+			"#simple-menu",
+			"$sidr-background",
+			"shadow",
+			"$sidr-box-shadow-color",
+			"click",
+			"strict",
+			"navbar-brand",
+			"BA.",
+			"headline",
+			"min-height",
+			"Modern",
+			"_QC",
+			"animateEXTRAS",
+			"randomHomeHeaderBG",
+			"z-index",
+			"pt-text-light",
+			"pt-primary-color",
+			"quick",
+			"vh",
+			"runStickySpy",
+			"sizer"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"$bci-orange",
+			"bigsplit",
+			"li",
+			"    <div class='item'><a href='img/arts/color-03.jpg' ><img src='img/arts/color-03.jpg' /></a></div> \n    <div class='item'><a href='img/arts/color-04.jpg' ><img src='img/arts/color-04.jpg' /></a></div> \n    <div class='item'><a href='img/arts/color-07.jpg' ><img src='img/arts/color-07.jpg' /></a></div> \n    <div class='item'><a href='img/arts/color-08.jpg' ><img src='img/arts/color-08.jpg' /></a></div> \n    <div class='item'><a href='img/arts/color-02.jpg' ><img src='img/arts/color-02.jpg' /></a></div> \n    <div class='item'><a href='img/arts/color-09.jpg' ><img src='img/arts/color-09.jpg' /></a></div> \n    <div class='item'><a href='img/arts/color-12.jpg' ><img src='img/arts/color-12.jpg' /></a></div> \n    <div class='item'><a href='img/arts/color-15.jpg' ><img src='img/arts/color-15.jpg' /></a></div> \n    <div class='item'><a href='img/arts/color-16.jpg' ><img src='img/arts/color-16.jpg' /></a></div> \n    <div class='item'><a href='img/arts/color-11.jpg' ><img src='img/arts/color-11.jpg' /></a></div> \n    <div class='item'><a href='img/arts/color-10.jpg' ><img src='img/arts/color-10.jpg' /></a></div> \n    <div class='item'><a href='img/arts/color-14.jpg' ><img src='img/arts/color-14.jpg' /></a></div> \n    <div class='item'><a href='img/arts/color-13.jpg' ><img src='img/arts/color-13.jpg' /></a></div> \n    <div class='item'><a href='img/arts/color-01.jpg' ><img src='img/arts/color-01.jpg' /></a></div> \n    <div class='item'><a href='img/arts/color-05.jpg' ><img src='img/arts/color-05.jpg' /></a></div> \n    <div class='item'><a href='img/arts/color-06.jpg' ><img src='img/arts/color-06.jpg' /></a></div> \n\n\n\n    <div class='item'><a href='img/arts/eyeball-01.jpg' ><img src='img/arts/eyeball-01.jpg' /></a></div> \n    <div class='item'><a href='img/arts/eyeball-02.jpg' ><img src='img/arts/eyeball-02.jpg' /></a></div> \n    <div class='item'><a href='img/arts/eyeball-03.jpg' ><img src='img/arts/eyeball-03.jpg' /></a></div> \n    <div class='item'><a href='img/arts/eyeball-04.jpg' ><img src='img/arts/eyeball-04.jpg' /></a></div> \n    <div class='item'><a href='img/arts/eyeball-05.jpg' ><img src='img/arts/eyeball-05.jpg' /></a></div> \n    \n    <div class='item'><a href='img/arts/eyeball-lady-01.jpg' ><img src='img/arts/eyeball-lady-01.jpg' /></a></div> \n\n    <div class='item'><a href='img/arts/geometry-amplituhedron-01.jpg' ><img src='img/arts/geometry-amplituhedron-01.jpg' /></a></div> \n    <div class='item'><a href='img/arts/geometry-chestahedron-01.jpg' ><img src='img/arts/geometry-chestahedron-01.jpg' /></a></div> \n    <div class='item'><a href='img/arts/geometry-dodecahedron-cloud-01.jpg' ><img src='img/arts/geometry-dodecahedron-cloud-01.jpg' /></a></div> \n    <div class='item'><a href='img/arts/geometry-dodecahedron-cloud-02.jpg' ><img src='img/arts/geometry-dodecahedron-cloud-02.jpg' /></a></div> \n    <div class='item'><a href='img/arts/geometry-platonic-solids.jpg' ><img src='img/arts/geometry-platonic-solids.jpg' /></a></div> \n\n\n",
+			"width",
+			"h3"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "SITE-VARS.scss",
+					"settings":
+					{
+						"buffer_size": 1243,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								613,
+								613
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "pt/_PT-MIXINS.scss",
+					"settings":
+					{
+						"buffer_size": 4960,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2407,
+								2407
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3569.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "SITE-VARS_CMS.scss",
+					"settings":
+					{
+						"buffer_size": 10867,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4,
+								4
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "pt/_pt-Library.scss",
+					"settings":
+					{
+						"buffer_size": 12571,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6571,
+								6571
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "kitchen-sink.kit",
+					"settings":
+					{
+						"buffer_size": 9145,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5296,
+								5297
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2923.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "site.kit",
+					"settings":
+					{
+						"buffer_size": 8211,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5971,
+								5971
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3031.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 6,
+					"file": "site.scss",
+					"settings":
+					{
+						"buffer_size": 1226,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								679,
+								474
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 269.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "sasskits/_site-base.scss",
+					"settings":
+					{
+						"buffer_size": 8487,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								704,
+								704
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 285.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 8,
+					"file": "site.js",
+					"settings":
+					{
+						"buffer_size": 751,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								482,
+								482
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "pt/pt-base-v12.js",
+					"settings":
+					{
+						"buffer_size": 55420,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2832,
+								2832
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 7256.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 20.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				2,
+				0,
+				3,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.355459430072,
+			0.613192027618,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 144.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"my",
+				"scss/myMixins.scss"
+			],
+			[
+				"bh",
+				"js/bh1.js"
+			],
+			[
+				"port",
+				"scss/bh1-portfolio.scss"
+			],
+			[
+				"eyeball",
+				"eyeball/eyeball.js"
+			],
+			[
+				"bh1.js",
+				"js/bh1.js"
+			],
+			[
+				"mym",
+				"scss/myMixins.scss"
+			],
+			[
+				"setting",
+				"scss/_settings.scss"
+			],
+			[
+				"app",
+				"scss/app.scss"
+			],
+			[
+				"send",
+				"php/send.php"
+			],
+			[
+				"form",
+				"js/bh-form.js"
+			],
+			[
+				"bh1",
+				"js/bh1.js"
+			],
+			[
+				"app.js",
+				"js/app.js"
+			],
+			[
+				"slick",
+				"slick/slick-lightbox.js"
+			],
+			[
+				"settings",
+				"scss/_settings.scss"
+			],
+			[
+				"mixin",
+				"scss/myMixins.scss"
+			],
+			[
+				"app.",
+				"js/app.js"
+			],
+			[
+				"gra",
+				"js/bh-graphics.js"
+			],
+			[
+				"tinker",
+				"scss/tinkers.scss"
+			],
+			[
+				"color",
+				"bower_components/greensock/src/uncompressed/plugins/ColorPropsPlugin.js"
+			],
+			[
+				"eyeba",
+				"eyeball/eyeball.js"
+			],
+			[
+				"webs",
+				"webs.html"
+			],
+			[
+				"index",
+				"index.html"
+			],
+			[
+				"psa",
+				"psa.html"
+			],
+			[
+				"_setti",
+				"scss/_settings.scss"
+			],
+			[
+				"bh.js",
+				"js/bh1.js"
+			],
+			[
+				"",
+				"humans.txt"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 250.0,
+	"status_bar_visible": true
+}

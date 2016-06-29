@@ -54,6 +54,24 @@ html {
 
 
 
+.pt-fixed{
+    position:fixed;
+    top:0; left:0; bottom:0; right:0;
+}
+
+
+
+
+.pt-bg-fixed{
+    // position:fixed;
+    // top:0; left:0; bottom:0; right:0;
+}
+
+
+
+
+
+
 
 
 
@@ -197,6 +215,7 @@ html {
   line-height:2em; 
   text-align:left;
 
+  background-color:white;
 
 
   @include ptBreakpoint($sm){
@@ -327,55 +346,6 @@ ul.social-media-icons {
 
 
 
-.pt-slick-1{
-  
-  margin:3em 0 0 0;
-  padding:0;
-  // display:flex;
-  // justify-content: stretch;
-  // align-items:center;
-  // align-content:center;
-
-  .slick-track{
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    align-content:center;
-  }
-
-  .slick-slide{
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    align-content:center;
-    // img{
-    //   // margin:auto;
-    // }
-  }
-
-
-  .slick-prev, 
-  .slick-next{
-    // background-color:grey;
-    // color:red;
-    height:50px;
-    // width:50px;
-    // border:1px solid red;
-    z-index:50;
-    // font-size:2em;
-    
-    &:before{
-      color:white;
-      font-size:50px;
-    }
-
-  }
-
-}
-
-
-
-
 
 
 
@@ -391,6 +361,12 @@ ul.social-media-icons {
 
 
  
+
+
+
+
+
+
 
 
 
@@ -535,6 +511,22 @@ ul.social-media-icons {
 
 
  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,193 @@
+
+
+// ALTERNATE TO FLEXSLIDER:
+@import "slick/slick-theme";
+@import "slick/slick";
+
+   
+
+
+
+$slick-arrow-color:white;
+$slick-arrow-bg:rgba(0,0,0,0.05);
+$slick-arrow-size:30px; // must be in pixels?
+
+
+
+
+
+
+
+
+
+
+
+
+// IF THE SLICK SLIDER ALSO HAS THE pt-imgswap-list FUNCTION,
+// SET THE HEIGHT TO 100%.
+
+@mixin data-pt-slick(){
+
+  position:relative;  
+  padding: 0;
+
+  img{
+    width:100%;
+    height:auto;
+  }
+
+  &.slick-slider{
+    margin: 0 0 0 0;  
+  }
+
+
+
+  & .slick-arrow{
+    background-color:$slick-arrow-bg;
+    color:transparent;
+    width:3%;
+    height:100%;
+
+    z-index:9;
+    
+    @include ptPos(5);
+
+    &:before{
+      font-size:$slick-arrow-size;
+      color:$slick-arrow-color;
+    }
+    &.slick-prev{
+      left:0;
+    } 
+    &.slick-next{
+      right:0;
+    }
+  }
+
+  & .slick-dots {
+    bottom: 0.5em;
+    button:before{
+      font-size:30px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+@mixin data-pt-imgswap-list(){
+
+  height:100%;
+
+  .slick-list,
+  .slick-track{
+    height:100%;
+  }
+
+  li{
+    height:100%;
+    img{
+      display:block !important;
+      visibility:hidden !important;
+
+      @include ptBreakpoint($sm){
+        display:none !important;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[data-pt-imgswap-list]{
+
+  @include data-pt-imgswap-list();
+}
+
+
+
+
+
+
+[data-pt-slick-row]{
+
+  @include data-pt-slick();
+}
+
+
+
+
+
+[data-pt-slick-single]{
+
+  @include data-pt-slick();
+
+  &[data-pt-imgswap-list]{
+
+    @include data-pt-imgswap-list();
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

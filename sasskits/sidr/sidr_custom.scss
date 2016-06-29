@@ -35,13 +35,45 @@ $sidr-topbar-text: #fff;
 
 
 
-
-
 @media screen and ( min-height: 600px ){
 	#sidr-topbar{
 		// position:fixed;
 	}
 }
+
+
+
+
+
+#sidr-menu-btn{
+
+	.js &{
+		@include ptBreakpoint($md){
+			display:none;
+		}
+	}
+}
+
+
+#sidr-topbar nav {
+
+	display:none;
+
+	@include ptBreakpoint($md){
+	    display:flex;
+	    flex-direction: row;
+	    justify-content: flex-start;
+	    flex-wrap:nowrap;
+	}
+
+}
+
+
+
+
+
+
+
 
 
 
@@ -387,8 +419,6 @@ body{
 
 
 
-
-
 .sidr-cover{
 
 	position:fixed; top:0; left:0; bottom:0; right:0;
@@ -448,33 +478,6 @@ body{
 
 
 
-
-
-
-
-
-#sidr-menu-btn{
-
-	.js &{
-		@include ptBreakpoint($md){
-			display:none;
-		}
-	}
-}
-
-
-#sidr-topbar nav {
-
-	display:none;
-
-	@include ptBreakpoint($md){
-	    display:flex;
-	    flex-direction: row;
-	    justify-content: flex-start;
-	    flex-wrap:nowrap;
-	}
-
-}
 
 
 
@@ -707,6 +710,32 @@ body{
 
 
 
+.js{
+
+
+	#sidr-menu-btn,
+	#sidr-close-btn,
+	#pt-sidr,
+	.sidr-cover{
+		@include ptBreakpoint($md){
+			display:none;
+		}
+
+	}
+
+	#sidr-topbar nav {
+		
+		display:none;
+
+		@include ptBreakpoint($md){
+		    display:flex;
+		    flex-direction: row;
+		    justify-content: flex-start;
+		    flex-wrap:nowrap;
+		}
+	}
+	
+}
 
 
 

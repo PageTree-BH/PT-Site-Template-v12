@@ -22,6 +22,8 @@
 
 .pt-zone{
 	position:relative;    width:100%;
+    // overflow:hidden;
+    // z-index:0;
 }
 
 .pt-zone-full   	{	@extend .pt-zone;	@include ptViewport(height, 100vh);	}
@@ -171,9 +173,7 @@
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    This is an interesting chunk that I sorof half sampled from BootStrap.
-
-    
+    This is an interesting chunk that I sortof half-nabbed from BootStrap v4.
     
  */
 

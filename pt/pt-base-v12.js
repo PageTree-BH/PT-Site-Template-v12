@@ -424,6 +424,8 @@ var PT = {
 
 */
 
+
+
     ,runStickies:function(){
 
         $('[data-pt-sticky]').each(function(i, val){
@@ -553,7 +555,7 @@ var PT = {
 
 */
 
-
+ 
     ,buildNavSpy: function() {
         
         // WE MUST WAIT UNTIL THE CONTENT IS DONE LOADING BEFORE 
@@ -581,8 +583,13 @@ var PT = {
                     var SpyNavItem = $(element).parent();
                     
 
+
+// add option for spy-offset as a number.
                     var ScrollToOffsetID = $(element).data('pt-spy-offset');
                     var ScrollToOffsetNumber = $(ScrollToOffsetID).outerHeight(true);
+
+
+
 
 
                     if($(SpyZone).length){
@@ -699,7 +706,8 @@ var PT = {
         var IMGurl = IMG.attr('src');
 
         IMG.css('display', 'none');
-
+        // IMG.css('visibility', 'hidden');
+ 
         DIV.css('background-image', 'url("'+IMGurl+'")' )
             .css('background-size', 'cover')
             .css('background-position','center');
@@ -731,7 +739,7 @@ var PT = {
 
 
 
-
+ 
 
 
 

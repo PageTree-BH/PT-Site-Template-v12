@@ -50,7 +50,10 @@
 // @import "sasskits/typography";
 
 
-@import "sasskits/homeplate";
+@import "sasskits/pt-homeplate.scss";
+
+@import "sasskits/pt-slicks.scss";
+
 
  
 @import "sasskits/ab-sections";
@@ -62,7 +65,6 @@
 @import "sasskits/sidr/sidr_custom";
 
 
-
 // BootStrap BASED TOP MENU:
 @import "sasskits/Navigation-TopBar";
 
@@ -72,11 +74,21 @@
 
 
 
+
+
+
+
+
+
+
+
+/* 
 // ALTERNATE TO FLEXSLIDER:
+
 @import "sasskits/slick/slick-theme";
 @import "sasskits/slick/slick";
-
-  
+ 
+ */
 
 
 

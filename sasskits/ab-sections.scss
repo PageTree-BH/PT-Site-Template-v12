@@ -22,7 +22,8 @@
     width:100%;
     // max-width:500px;
     
-    margin:0.5em auto;
+    // margin:0.5em auto;
+    margin:0 auto;
     
     @include ptBreakpoint($sm){
 
@@ -104,8 +105,9 @@
 
 
 
+ 
 
-
+ 
 
 .ab-header{
   display:block;
@@ -171,7 +173,7 @@
 }
 
 
-
+ 
 
 .ab-inner{
 

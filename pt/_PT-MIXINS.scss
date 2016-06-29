@@ -1,4 +1,27 @@
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
  
 // BREAKPOINT SIZER - USES SAME BREAKPOINTS AS DEFAULT BOOTSTRAP:
@@ -202,6 +225,17 @@ $xl-only: ( min: map-get($xl, min) );
 
 
 
+$zindex: (
+  modal     : 9000, 
+  overlay   : 8000,
+  dropdown  : 7000,
+  header    : 6000,
+  footer    : 5000
+);
+
+.header {
+  z-index: map-get($zindex, header);
+}
 
 
 
@@ -233,10 +267,6 @@ $xl-only: ( min: map-get($xl, min) );
 
 
 
-
-
-// I'M NOT SURE IF USING THE ptViewport() MIXIN IS A GOOD IDEA ANY MORE.. .. 
-// .. .. PLEASE RECONSIDER.
 
 /**
  * https://gist.github.com/BenMorel/e9e34c08360ebbbd0634
@@ -304,6 +334,18 @@ $xl-only: ( min: map-get($xl, min) );
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

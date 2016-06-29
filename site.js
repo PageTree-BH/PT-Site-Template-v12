@@ -15,8 +15,9 @@ Modernizr:true, jQuery:true, ssm:true
 
 // @codekit-prepend "pt/pt-base-v12.js"  
  
-    
- 
+
+// @codekit-append "sasskits/pt-slicks.js"
+  
 
 // PT._isDevMode = true;
 
@@ -28,11 +29,11 @@ $(function() {
 });
 
 
-
+ 
  
  
   
-
+ 
  
 
 var SITE = { 
@@ -56,7 +57,7 @@ var SITE = {
  
 
 
- 
+  
 
 
 
